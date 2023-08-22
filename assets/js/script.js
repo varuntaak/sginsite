@@ -1,18 +1,18 @@
 $(document).ready(function(){
     // Mobile Menu Icon
    $(document).ready(function(){
-      $('#nav-icon').click(function(){
-         // $(this).toggleClass('open');
-         // $('.header-nav nav').slideToggle();
-         $('.mobile_menu').css({'right':'0','opacity': '1', 'visibility': 'visible'}); 
-         $('.mobile_overlay').show();
-      });
-      $('#menu_close').click(function(){
-         // $(this).toggleClass('open');
-         // $('.header-nav nav').slideToggle();
-         $('.mobile_menu').css({'right':'0%', 'opacity': '0', 'visibility': 'hidden'});
-         $('.mobile_overlay').hide();
-      });
+      // $('#nav-icon').click(function(){
+      //    // $(this).toggleClass('open');
+      //    // $('.header-nav nav').slideToggle();
+      //    $('.mobile_menu').css({'right':'0','opacity': '1', 'visibility': 'visible'}); 
+      //    $('.mobile_overlay').show();
+      // });
+      // $('#menu_close').click(function(){
+      //    // $(this).toggleClass('open');
+      //    // $('.header-nav nav').slideToggle();
+      //    $('.mobile_menu').css({'right':'0%', 'opacity': '0', 'visibility': 'hidden'});
+      //    $('.mobile_overlay').hide();
+      // });
    });
 
 
@@ -158,5 +158,37 @@ document.addEventListener("DOMContentLoaded", function() {
    });
    });
 
+
+window.addEventListener('load', function() {
+    function openMobileMenu() {
+        document.querySelector('.mobile_menu').style.right = '0';
+        document.querySelector('.mobile_menu').style.opacity = '1';
+        document.querySelector('.mobile_menu').style.display = 'flex';
+        document.querySelector('.mobile_menu').style.visibility = 'visible';
+        document.querySelector('.mobile_overlay').style.display = 'block';
+    }
+
+    function closeMobileMenu() {
+        document.querySelector('.mobile_menu').style.right = '0';
+        document.querySelector('.mobile_menu').style.opacity = '0';
+        document.querySelector('.mobile_menu').style.display = 'none';
+        document.querySelector('.mobile_menu').style.visibility = 'hidden';
+        document.querySelector('.mobile_overlay').style.display = 'none';
+    }
+
+    document.querySelector('#nav-icon').addEventListener('click', function() {
+        openMobileMenu();
+    });
+
+    document.querySelector('#menu_close').addEventListener('click', function() {
+        closeMobileMenu();
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 767) {
+            closeMobileMenu();
+        }
+    });
+});
 
 

@@ -2749,7 +2749,7 @@ width: 100%;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
-  /* display: none; */
+   display: none; 
 }
 
 .mobile_menu ul li p {
