@@ -264,7 +264,7 @@
 		max-width: 100%;
 	}
 	.pricing-banner-heading {
-		padding: 90px 0 90px 0;
+		padding: 72px 0 72px 0;
 	}
 
 	/* Rent Page CSS */
@@ -612,7 +612,7 @@
 		flex-direction: column;
 	}
 	.Pricing_form_area {
-		margin-top: 20px;
+		margin-top: 35px;
 		padding-bottom: 40px;
 	}
 
@@ -1067,7 +1067,7 @@
 		padding: 40px 0 73px 0;
 	}
 	.Cashflow-banner-heading{
-		padding: 40px 0px 187px 0px;
+		padding: 52px 0px 187px 0px;
 	}
 
 
@@ -1153,7 +1153,6 @@
 		padding-bottom: 0px;
 	}
 	.Pricing_form_area {
-		margin-top: 35px;
 		padding-bottom: 29px;
 	}
 
