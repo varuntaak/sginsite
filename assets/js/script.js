@@ -1,33 +1,7 @@
 $(document).ready(function(){
-    // Mobile Menu Icon
-   $(document).ready(function(){
-      // $('#nav-icon').click(function(){
-      //    // $(this).toggleClass('open');
-      //    // $('.header-nav nav').slideToggle();
-      //    $('.mobile_menu').css({'right':'0','opacity': '1', 'visibility': 'visible'}); 
-      //    $('.mobile_overlay').show();
-      // });
-      // $('#menu_close').click(function(){
-      //    // $(this).toggleClass('open');
-      //    // $('.header-nav nav').slideToggle();
-      //    $('.mobile_menu').css({'right':'0%', 'opacity': '0', 'visibility': 'hidden'});
-      //    $('.mobile_overlay').hide();
-      // });
-   });
 
 
-   // Start Fixed Scroll Area jQuery
-   
-   function backtotop() {
-      $(window).scroll(function(){
-            if ($(this).scrollTop() > 500) {
-               $('#backtotop').addClass('activate');
-            } else {
-               $('#backtotop').removeClass('activate');
-            }
-      });
-   }
-   backtotop();
+  
 
       // End Fixed Scroll Area jQuery
 
@@ -106,57 +80,58 @@ $(document).ready(function(){
 
 
 
-        // Nice Select
-        $(document).ready(function () {
-            $('select').niceSelect();
-        });
 
 
 });
 
 
-// Distance Custom Click 
+  // Nice Select
+  $(document).ready(function () {
+      $('select').niceSelect();
+  });
 
-// const optionMenu = document.querySelector('.select_menu'),
-//       selectBtn = optionMenu.querySelector('.select_btn');
-
-// selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-
-
-// window.onclick = function(event){
-//    if(!event.targer.matches(".select_btn")){
-//       var dd = document.getElementsByClassName("options");
-//    }
-//    for(var i = 0; i<dd.length; i++){
-//       var x =dd(i);
-//       if(x.classList.contains('active'))(x.classList.remove('active'))
-//    }
-// }
+ // Start Fixed Scroll Area jQuery
+   
+   function backtotop() {
+      $(window).scroll(function(){
+            if ($(this).scrollTop() > 500) {
+               $('#backtotop').addClass('activate');
+            } else {
+               $('#backtotop').removeClass('activate');
+            }
+      });
+   }
+   backtotop();
 
 
 
 
 document.addEventListener("DOMContentLoaded", function() {
    const menuContainer = document.querySelector(".select_menu");
-   const menuToggle = document.querySelector(".select_btn");
+   const menuToggle = document.querySelector(".select_btn"); // Check this element's existence
    const menu = document.querySelector(".menu");
 
-   menuToggle.addEventListener("click", function(event) {
-       event.stopPropagation(); // Prevents the click event from reaching the document
+   if (menuToggle) { // Make sure menuToggle is defined before using it
+       menuToggle.addEventListener("click", function(event) {
+           event.stopPropagation(); // Prevents the click event from reaching the document
 
-       menu.classList.toggle("active");
-       menuToggle.classList.toggle("active");
-   });
+           menu.classList.toggle("active");
+           menuToggle.classList.toggle("active");
+       });
+   }
 
    document.addEventListener("click", function(event) {
        const target = event.target;
 
-       if (!menuContainer.contains(target)) {
-       menu.classList.remove("active");
-       menuToggle.classList.remove("active");
+       if (menuContainer && !menuContainer.contains(target)) {
+           menu.classList.remove("active");
+           if (menuToggle) { // Check menuToggle again before using it
+               menuToggle.classList.remove("active");
+           }
        }
    });
-   });
+});
+
 
 
 window.addEventListener('load', function() {
