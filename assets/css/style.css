@@ -2215,7 +2215,14 @@ width: 100%;
 /* ===================================================================
                             Contact Area Css Start
 ====================================================================*/
-
+.contact_shep_main{
+	background: url(../images/header-bg.png) no-repeat scroll center center / cover;
+    background-size: 100% 100%;
+	border-bottom: none;
+}
+.contact_shep_main .rent-banner-heading {
+    padding: 40px 0px 135px;
+}
 
 .contact_title h2 {
 	color: #000929;
