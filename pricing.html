@@ -10,6 +10,10 @@
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
    <!-- Font-Awesome -->
    <link rel="stylesheet" href="assets/css/fontaswesome.min.css">
+    <!-- bootstrap slider styles -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-slider/bootstrap-slider.min.css"/>
+   <!-- Nice Selector Style Css -->
+   <link rel="stylesheet" href="assets/css/nice-select.css">
    <!-- Style Css -->
    <link rel="stylesheet" href="assets/css/style.css">
    <!-- Responsive Css -->
@@ -20,7 +24,7 @@
                                  Header Area Start 
    =====================================================================================-->
    <header>
-      <div class="header-area home_header header_shape">
+      <div class="header-area">
          <div class="container">
             <div class="header-main">
                <div class="header-menu">
@@ -85,11 +89,224 @@
    =====================================================================================-->
 
    <!-- ===================================================================================
+                                Pricing Form Area Start
+   =====================================================================================-->
+      <section class="Pricing_form_area">
+         <div class="container">
+            <div class="pricing_form_main">
+               <div class="pricing_filter_content">
+                  <div class="pricing_filter_itme" data-bs-toggle="offcanvas" data-bs-target="#filteroffcanvas" aria-controls="offcanvasResponsive">
+                     <p class="text_14">Filters</p>
+                    <img src="assets/images/filter.png" alt="filter-icon">
+                  </div>
+                  <div class="pricing_filter_itme" data-bs-toggle="offcanvas" data-bs-target="#sortoffcanvas" aria-controls="offcanvasResponsive">
+                     <p class="text_14">Sort</p>
+                     <img src="assets/images/sort.png" alt="short-img">
+                  </div>
+               </div>
+
+               <div class="pricing_form_content">
+                  <div class="pricing_form_left">
+                    
+                        <div class="select-item">
+                           <select class="form-select" aria-label="Large select example" >
+                               <option data-display="Avg psf"></option>
+                               <option value="$3,000">$3,000</option>
+                               <option value="$6,000">$6,000</option>
+                               <option value="$9,000">$9,000</option>
+                           </select>
+                       </div>
+                        <div class="select-item">
+                           <select class="form-select" aria-label="Large select example" >
+                               <option data-display="Avg rent psf"></option>
+                               <option value="$3,000">$3,000</option>
+                               <option value="$6,000">$6,000</option>
+                               <option value="$9,000">$9,000</option>
+                           </select>
+                       </div>
+                        <div class="select-item">
+                           <select class="form-select" aria-label="Large select example" >
+                               <option data-display="Avg price gain"></option>
+                               <option value="$3,000">$3,000</option>
+                               <option value="$6,000">$6,000</option>
+                               <option value="$9,000">$9,000</option>
+                           </select>
+                       </div>
+                     <!-- <div class="select_menu">
+                        <div onclick="myfunction()" class="select_btn" >
+                           <span class="sBtn_text">Distance</span>
+                           <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="options" id="mydropdown">
+                           <li class="slider-range Distance_range">
+                              <input id="ex24" type="text" data-slider-step="1" data-slider-ticks-snap-bounds="200" data-slider-ticks-tooltip="true" data-slider-max="1000"  data-slider-value="200" /> <Span class="text_14">1K</Span>
+                           </li>
+                        </ul>
+                     </div> -->
+
+                     <div class="select_menu">
+                        <div class="select_btn">
+                           <span class="sBtn_text">Distance</span>
+                           <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="menu">
+                           <li class="slider-range Distance_range">
+                              <input id="ex24" type="text" data-slider-step="1" data-slider-ticks-snap-bounds="200" data-slider-ticks-tooltip="true" data-slider-max="1000"  data-slider-value="200" /> <Span class="text_14">1K</Span>
+                           </li>
+                        </ul>
+                      </div>
+                     
+                     <div class="pricing_form_right mobile_pricing_form_right mobile_pricing_none">
+                        <p class="text_14">Sort by</p>
+                     <div class="select-item">
+                        <select class="form-select" aria-label="Large select example" >
+                            <option data-display="Avg psf"></option>
+                            <option value="Avg psf">Avg psf</option>
+                            <option value="Avg rent psf">Avg rent psf</option>
+                            <option value="Avg price gain">Avg price gain</option>
+                        </select>
+                    </div>
+                     </div>
+                  </div>
+                  <div class="pricing_form_right mobile_pricing_none">
+                     <p class="text_14">Sort by</p>
+                     <div class="select-item">
+                        <select class="form-select" aria-label="Large select example" >
+                            <option data-display="Avg psf"></option>
+                            <option value="Avg psf">Avg psf</option>
+                            <option value="Avg rent psf">Avg rent psf</option>
+                            <option value="Avg price gain">Avg price gain</option>
+                        </select>
+                    </div>
+                  </div>
+               </div>
+               
+
+
+
+               <!-- off  -->
+               <div class="d-sm-none">
+                  <div class="offcanvas_main2">
+                     <div class="offcanvas-sm offcanvas-bottom" tabindex="-1" id="filteroffcanvas" aria-labelledby="offcanvasResponsiveLabel">
+                        <div class="offcanvas-header">
+                          <h3 class="heading_3" id="offcanvasResponsiveLabel">Filters</h3>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#filteroffcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                           <div class="mobile_filter_content">
+                              <ul>
+                                 <p class="pera_text">Avg psf</p>
+                                 <li>
+                                    <input type="radio" id="Avg_id1" name="Avg_psf_price" value="$3,000">
+                                    <label for="Avg_id1">$3,000</label>
+                                 </li>
+                                 <li>
+                                    <input type="radio" id="Avg_id2" name="Avg_psf_price" value="$6,000">
+                                    <label for="Avg_id2">$6,000</label>
+                                 </li>
+                                 <li>
+                                    <input type="radio" id="Avg_id3" name="Avg_psf_price" value="$6,000">
+                                    <label for="Avg_id3">$9,000</label>
+                                 </li>
+                              </ul>
+                              <ul>
+                                 <p class="pera_text">Avg rent psf</p>
+                                 <li>
+                                    <input type="radio" id="Avg_rent1" name="Avg_rent" value="$3,000">
+                                    <label for="Avg_rent1">$3,000</label>
+                                 </li>
+                                 <li>
+                                    <input type="radio" id="Avg_rent2" name="Avg_rent" value="$6,000">
+                                    <label for="Avg_rent2">$6,000</label>
+                                 </li>
+                                 <li>
+                                    <input type="radio" id="Avg_rent3" name="Avg_rent" value="$6,000">
+                                    <label for="Avg_rent3">$9,000</label>
+                                 </li>
+                              </ul>
+                              <ul>
+                                 <p class="pera_text">Avg price gain</p>
+                                 <li>
+                                    <input type="radio" id="Avg_price_gain1" name="Avg_price_gain" value="$3,000">
+                                    <label for="Avg_price_gain1">$3,000</label>
+                                 </li>
+                                 <li>
+                                    <input type="radio" id="Avg_price_gain2" name="Avg_price_gain" value="$6,000">
+                                    <label for="Avg_price_gain2">$6,000</label>
+                                 </li>
+                                 <li>
+                                    <input type="radio" id="Avg_price_gain3" name="Avg_price_gain" value="$6,000">
+                                    <label for="Avg_price_gain3">$9,000</label>
+                                 </li>
+                              </ul>
+                             
+                              
+                              <ul class="mobile_distance_range">
+                                 <p class="pera_text">Distance</p>
+                                 <li class="slider-range Distance_range">
+                                    <input id="ex25" type="text" data-slider-step="1" data-slider-ticks-snap-bounds="200" data-slider-ticks-tooltip="true" data-slider-max="1000"  data-slider-value="200" /> <Span class="text_14">1K</Span>
+                                 </li>
+                              </ul>
+                             
+   
+                              <div class="range_btn_area">
+                                 <a href="#" class="btn_1">Save Changes</a>
+                                 <a type="button" class="btn_1 transparent_btn" data-bs-dismiss="offcanvas" data-bs-target="#filteroffcanvas">Clear Filters</a>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+              
+               <!-- off  -->
+               <!-- off  -->
+               <div class="d-sm-none">
+                  <div class="occanvas_parent_class">
+                     <div class="offcanvas_main3">
+                        <div class="offcanvas-sm offcanvas-bottom" tabindex="-1" id="sortoffcanvas" aria-labelledby="offcanvasResponsiveLabel">
+                           <div class="offcanvas-header">
+                             <h3 class="heading_3" id="offcanvasResponsiveLabel">Sort</h3>
+                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sortoffcanvas" aria-label="Close"></button>
+                           </div>
+                           <div class="offcanvas-body">
+                              <div class="mobile_filter_content">
+                                 <ul class="fliter_item_pt">
+                                    <li>
+                                       <input type="radio" id="Avg_sort1" name="Avg_sort" value="Avg psf">
+                                       <label for="Avg_sort1">Avg psf</label>
+                                    </li>
+                                    <li>
+                                       <input type="radio" id="Avg_sort2" name="Avg_sort" value="Avg rent psf">
+                                       <label for="Avg_sort2">Avg rent psf</label>
+                                    </li>
+                                    <li>
+                                       <input type="radio" id="Avg_sort3" name="Avg_sort" value="Avg price gain">
+                                       <label for="Avg_sort3">Avg price gain</label>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                         </div>
+                     </div> 
+                  </div>
+               </div>
+               <!-- off  -->
+
+            </div>
+         </div>
+      </section>
+   <!-- ===================================================================================
+                                 Pricing Form Area End 
+   =====================================================================================-->
+
+   <!-- ===================================================================================
                                  Pricing Area Start 
    =====================================================================================-->
    <section class="pricing-section">
       <div class="container">
          <div class="pricing-main">
+            <p class="pera_text">showing 42 results</p>
             <!-- Pricing Single -->
             <div class="pricing-single">
                <div class="mobile-batch">
@@ -370,6 +587,10 @@
    <!-- Js Files -->
    <script src="assets/js/jquery-3.6.1.min.js"></script>
    <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <!-- bootstrap slider scripts -->
+   <script src="assets/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+   <script src="assets/js/jquery.nice-select.js"></script>
+
    <script src="assets/js/script.js"></script>
 </body>
 </html>

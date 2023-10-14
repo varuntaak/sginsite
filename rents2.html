@@ -20,7 +20,7 @@
                                  Header Area Start 
    =====================================================================================-->
    <header>
-      <div class="header-area home_header header_shape">
+      <div class="header-area home_header">
          <div class="container">
             <div class="header-main">
                <div class="header-menu">
@@ -85,368 +85,410 @@
    <!-- ===================================================================================
                                  Rent Banner Area End 
    =====================================================================================-->
-
-   <!-- ===================================================================================
+   <section class="new_tab_main">
+      <div class="container">
+         <div class="new_tab_content">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link active text_18" id="Cashflow-tab" data-bs-toggle="tab" data-bs-target="#Cashflow" type="button" role="tab" aria-controls="Cashflow" aria-selected="true">Cashflow</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text_18" id="Locations-tab" data-bs-toggle="tab" data-bs-target="#Locations" type="button" role="tab" aria-controls="Locations" aria-selected="false">Locations</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text_18" id="another-tab" data-bs-toggle="tab" data-bs-target="#another" type="button" role="tab" aria-controls="another" aria-selected="false">another</button>
+               </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+               <div class="tab-pane fade show active" id="Cashflow" role="tabpanel" aria-labelledby="Cashflow-tab">
+                  <!-- ===================================================================================
                                  Rent Fixt Area Start 
-   =====================================================================================-->
-   <section class="rent_fixt_section" id="backtotop">
-      <div class="container">
-         <div class="rent_max_width">
-            <div class="fixt-content">
-               <h3 class="rent_heading">Floraview Rents</h3>
-               <div class="fixt-btn-area">
-                  <h4 class="btn-text">Prices</h4>
-                  <div class="tab-button-area">
-                     <a href="#" type="button"  class="tab-btn" data-bs-toggle="modal" data-bs-target="#Search_exampleModal" data-bs-whatever="@mdo">Search</a>
-                     <a href="#" class="tab-btn">Rent</a>
-                     <a href="#" class="tab-btn">Nearby</a>
+                  =====================================================================================-->
+                  <div class="rent_fixt_section" id="backtotop">
+                     <div class="rent_max_width">
+                        <div class="fixt-content">
+                           <h3 class="rent_heading">Floraview Rents</h3>
+                           <div class="fixt-btn-area">
+                              <h4 class="btn-text">Prices</h4>
+                              <div class="tab-button-area">
+                                 <a href="#" type="button"  class="tab-btn" data-bs-toggle="modal" data-bs-target="#Search_exampleModal" data-bs-whatever="@mdo">Search</a>
+                                 <a href="#" class="tab-btn">Rent</a>
+                                 <a href="#" class="tab-btn">Nearby</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ===================================================================================
+                                                Rent Fixt Area End 
+                  =====================================================================================-->
+
+                  <!-- ===================================================================================
+                                                Rent Tab Area Start 
+                  =====================================================================================-->
+                  <div>
+                     <div class="rent_max_width rent_max_width2">
+                        <div class="rent-tab-area">
+                           <div class="home_tab">
+                              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">6 months</button>
+                                 </li>
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">12 months</button>
+                                 </li>
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">24 months</button>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="tab-content" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                 <div class="tab-button-area">
+                                    <a href="#" type="button"  class="tab-btn" data-bs-toggle="modal"                      data-bs-target="#Search_exampleModal" data-bs-whatever="@mdo">Search</a>
+                                    <a href="#" class="tab-btn">Rent</a>
+                                    <a href="#" class="tab-btn">Nearby</a>
+                                 </div>
+
+                                 <div class="first-content">
+                                    <div class="first-content-single">
+                                       <div class="price-psf">
+                                          <h4>Price PSF</h4>
+                                       </div>
+                                       <div class="tab-progress-area">
+                                          <div class="preogress-price">
+                                             <div class="progress-price-left">
+                                                <h3 class="heading_3">$1,700</h3>
+                                             </div>
+                                             <div class="progress-price-right">
+                                                <h3 class="heading_3">$2,690</h3>
+                                             </div>
+                                          </div>
+                                          <div id="progress-bar-container">
+                                             <div class="progress-bar-child progress"></div>
+                                             <div class="progress-bar-child shrinker timelapse"></div>
+                                          </div>
+                                          <div class="low-high">
+                                             <h5>Low</h5>
+                                             <h5>High</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="first-content-single">
+                                       <div class="price-psf"> 
+                                          <h4>Unit Price</h4>
+                                       </div>
+                                       <div class="tab-progress-area">
+                                          <div class="preogress-price">
+                                             <div class="progress-price-left">
+                                                <h3 class="heading_3">605K</h3>
+                                             </div>
+                                             <div class="progress-price-right">
+                                                <h3 class="heading_3">1.45 mil</h3>
+                                             </div>
+                                          </div>
+                                          <div id="progress-bar-container">
+                                             <div class="progress-bar-child progress"></div>
+                                             <div class="progress-bar-child shrinker timelapse"></div>
+                                          </div>
+                                          <div class="low-high">
+                                             <h5>Low</h5>
+                                             <h5>High</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                 <div class="tab-button-area">
+                                    <a href="#" class="tab-btn">Search</a>
+                                    <a href="#" class="tab-btn">Rent</a>
+                                    <a href="#" class="tab-btn">Nearby</a>
+                                 </div>
+                                 <div class="first-content">
+                                    <div class="first-content-single">
+                                       <div class="price-psf">
+                                          <h4>Price PSF</h4>
+                                       </div>
+                                       <div class="tab-progress-area">
+                                          <div class="preogress-price">
+                                             <div class="progress-price-left">
+                                                <h3 class="heading_3">$1,700</h3>
+                                             </div>
+                                             <div class="progress-price-right">
+                                                <h3 class="heading_3">$2,690</h3>
+                                             </div>
+                                          </div>
+                                          <div id="progress-bar-container">
+                                             <div class="progress-bar-child progress"></div>
+                                             <div class="progress-bar-child shrinker timelapse"></div>
+                                          </div>
+                                          <div class="low-high">
+                                             <h5>Low</h5>
+                                             <h5>High</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="first-content-single">
+                                       <div class="price-psf">
+                                          <h4>Unit Price</h4>
+                                       </div>
+                                       <div class="tab-progress-area">
+                                          <div class="preogress-price">
+                                             <div class="progress-price-left">
+                                                <h3 class="heading_3">605K</h3>
+                                             </div>
+                                             <div class="progress-price-right">
+                                                <h3 class="heading_3">1.45 mil</h3>
+                                             </div>
+                                          </div>
+                                          <div id="progress-bar-container">
+                                             <div class="progress-bar-child progress"></div>
+                                             <div class="progress-bar-child shrinker timelapse"></div>
+                                          </div>
+                                          <div class="low-high">
+                                             <h5>Low</h5>
+                                             <h5>High</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                 <div class="tab-button-area">
+                                    <a href="#" class="tab-btn">Search</a>
+                                    <a href="#" class="tab-btn">Rent</a>
+                                    <a href="#" class="tab-btn">Nearby</a>
+                                 </div>
+                                 <div class="first-content">
+                                    <div class="first-content-single">
+                                       <div class="price-psf">
+                                          <h4>Price PSF</h4>
+                                       </div>
+                                       <div class="tab-progress-area">
+                                          <div class="preogress-price">
+                                             <div class="progress-price-left">
+                                                <h3 class="heading_3">$1,700</h3>
+                                             </div>
+                                             <div class="progress-price-right">
+                                                <h3 class="heading_3">$2,690</h3>
+                                             </div>
+                                          </div>
+                                          <div id="progress-bar-container">
+                                             <div class="progress-bar-child progress"></div>
+                                             <div class="progress-bar-child shrinker timelapse"></div>
+                                          </div>
+                                          <div class="low-high">
+                                             <h5>Low</h5>
+                                             <h5>High</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="first-content-single">
+                                       <div class="price-psf">
+                                          <h4>Unit Price</h4>
+                                       </div>
+                                       <div class="tab-progress-area">
+                                          <div class="preogress-price">
+                                             <div class="progress-price-left">
+                                                <h3 class="heading_3">605K</h3>
+                                             </div>
+                                             <div class="progress-price-right">
+                                                <h3 class="heading_3">1.45 mil</h3>
+                                             </div>
+                                          </div>
+                                          <div id="progress-bar-container">
+                                             <div class="progress-bar-child progress"></div>
+                                             <div class="progress-bar-child shrinker timelapse"></div>
+                                          </div>
+                                          <div class="low-high">
+                                             <h5>Low</h5>
+                                             <h5>High</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ===================================================================================
+                                                Rent Tab Area End 
+                  =====================================================================================-->
+
+                  <!-- ===================================================================================
+                                                Avg Price Area Start
+                  =====================================================================================-->
+                  <div class="Avg_Price">
+                     <div class="rent_max_width">
+                        <div class="Avg_Price_content">
+                           <div class="Avg_Price_title">
+                              <h3 class="heading_3">Avg price gain</h3>
+                              <h3 class="heading_3">45.45%</h3>
+                           </div>
+                           <div class="Avg_Price_Chart">
+                              <p>PSF Price</p>
+                              <img class="desk_chart" src="assets/images/avg_price.png" alt="chart_img">
+                              <img class="mobile_chart" src="assets/images/avg_price_mobile.png" alt="chart_img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ===================================================================================
+                                                Avg Price Area Start
+                  =====================================================================================-->
+
+                  <!-- ===================================================================================
+                                                   Value Area Start
+                  =====================================================================================-->
+                  <div class="Value_area">     
+                     <div class="rent_max_width">
+                        <div class="Avg_Price_content">
+                           <div class="Avg_Price_title">
+                              <h3 class="heading_3">Volume</h3>
+                              <h3 class="heading_3">11</h3>
+                           </div>
+                           <div class="Avg_Price_Chart">
+                              <p>Transactions</p>
+                              <img class="desk_chart" src="assets/images/value.png" alt="value_img">
+                              <img class="mobile_chart" src="assets/images/value_mobile.png" alt="value_img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ===================================================================================
+                                                Value Area Start
+                  =====================================================================================-->
+
+                  <!-- ===================================================================================
+                                                Pricing Table Area Start
+                  =====================================================================================-->
+                  <div class="Pricing_Table_area">
+                     <div class="rent_max_width">
+                        <div class="Pricing_common_table">
+                           <div class="table-responsive">
+                              <table class="table">
+                                 <thead>
+                                    <tr>
+                                       <th>Unit Price</th>
+                                       <th>PSF Price</th>
+                                       <th>Size</th>
+                                       <th>Date</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                    <tr>
+                                       <td>$605,888</td>
+                                       <td>$1,607</td>
+                                       <td>377 sqft</td>
+                                       <td>May 23</td>
+                                    </tr>         
+                                 </table>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ===================================================================================
+                                                Pricing Table Area End
+                  =====================================================================================-->
+               </div>
+              
+
+               <!-- Locations Tab Start -->
+               <div class="tab-pane fade" id="Locations" role="tabpanel" aria-labelledby="Locations-tab">
+                  <div class="maps_box">
+                     <img src="assets/images/amn/map.png" alt="">
+                     <div class="maps_control_btn">
+                         <button><i class="fa-solid fa-location-dot"></i> &nbsp; Open Google Maps</button>
+                     </div>
+                     <div class="google_zoom">
+                         <div class="lock_icon">
+                             <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
+                         </div>
+                         <ul class="zoom_btn">
+                             <li><a href="#"><i class="fa-solid fa-plus"></i></a></li>
+                             <li><a href="#"><i class="fa-solid fa-minus"></i></a></li>
+                         </ul>
+                     </div>
+                     <div class="inbox_loc">
+                         <a href="#"><img src="assets/images/amn/inbox.png" alt=""></a>
+                     </div>
+                 </div>
+               </div>
+               <!-- Locations Tab End -->
+                <!-- Anoter Tab Start -->
+                <div class="tab-pane fade" id="another" role="tabpanel" aria-labelledby="another-tab">
+                  <div class="another_content">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reprehenderit repellendus iusto saepe totam obcaecati aliquid! Enim, laborum! Aut molestiae porro hic, esse architecto a sapiente sed dolor nisi aliquam consectetur consequuntur ad odio repudiandae animi velit officiis reprehenderit non laudantium qui expedita voluptatum? Numquam doloribus aspernatur voluptates autem, consectetur perspiciatis non vel repellendus in debitis ad nemo. Velit sapiente ad amet sed repellat, dolores est cupiditate ea? Porro facilis fuga impedit amet excepturi, odio fugiat repellendus necessitatibus dolore, molestias itaque dolorum culpa consequuntur veritatis inventore distinctio placeat! Labore corrupti repudiandae quod soluta adipisci animi voluptates delectus fugit accusantium dolor!</p>
                   </div>
                </div>
+               <!-- Anoter Tab End -->
             </div>
          </div>
       </div>
-   </section>
-   <!-- ===================================================================================
-                                 Rent Fixt Area End 
-   =====================================================================================-->
-
-   <!-- ===================================================================================
-                                 Rent Tab Area Start 
-   =====================================================================================-->
-   <section>
-      <div class="container">
-        <div class="rent_max_width rent_max_width2">
-            <div class="rent-tab-area">
-               <div class="home_tab">
-                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                     <li class="nav-item" role="presentation">
-                       <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">6 months</button>
-                     </li>
-                     <li class="nav-item" role="presentation">
-                       <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">12 months</button>
-                     </li>
-                     <li class="nav-item" role="presentation">
-                       <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">24 months</button>
-                     </li>
-                  </ul>
-               </div>
-               <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                     <div class="tab-button-area">
-                        <a href="#" type="button"  class="tab-btn" data-bs-toggle="modal"                      data-bs-target="#Search_exampleModal" data-bs-whatever="@mdo">Search</a>
-                        <a href="#" class="tab-btn">Rent</a>
-                        <a href="#" class="tab-btn">Nearby</a>
-                     </div>
-
-                     <div class="first-content">
-                        <div class="first-content-single">
-                           <div class="price-psf">
-                              <h4>Price PSF</h4>
-                           </div>
-                           <div class="tab-progress-area">
-                              <div class="preogress-price">
-                                 <div class="progress-price-left">
-                                    <h3 class="heading_3">$1,700</h3>
-                                 </div>
-                                 <div class="progress-price-right">
-                                    <h3 class="heading_3">$2,690</h3>
-                                 </div>
-                              </div>
-                              <div id="progress-bar-container">
-                                 <div class="progress-bar-child progress"></div>
-                                 <div class="progress-bar-child shrinker timelapse"></div>
-                              </div>
-                              <div class="low-high">
-                                 <h5>Low</h5>
-                                 <h5>High</h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="first-content-single">
-                           <div class="price-psf"> 
-                              <h4>Unit Price</h4>
-                           </div>
-                           <div class="tab-progress-area">
-                              <div class="preogress-price">
-                                 <div class="progress-price-left">
-                                    <h3 class="heading_3">605K</h3>
-                                 </div>
-                                 <div class="progress-price-right">
-                                    <h3 class="heading_3">1.45 mil</h3>
-                                 </div>
-                              </div>
-                              <div id="progress-bar-container">
-                                 <div class="progress-bar-child progress"></div>
-                                 <div class="progress-bar-child shrinker timelapse"></div>
-                              </div>
-                              <div class="low-high">
-                                 <h5>Low</h5>
-                                 <h5>High</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                     <div class="tab-button-area">
-                        <a href="#" class="tab-btn">Search</a>
-                        <a href="#" class="tab-btn">Rent</a>
-                        <a href="#" class="tab-btn">Nearby</a>
-                     </div>
-                     <div class="first-content">
-                        <div class="first-content-single">
-                           <div class="price-psf">
-                              <h4>Price PSF</h4>
-                           </div>
-                           <div class="tab-progress-area">
-                              <div class="preogress-price">
-                                 <div class="progress-price-left">
-                                    <h3 class="heading_3">$1,700</h3>
-                                 </div>
-                                 <div class="progress-price-right">
-                                    <h3 class="heading_3">$2,690</h3>
-                                 </div>
-                              </div>
-                              <div id="progress-bar-container">
-                                 <div class="progress-bar-child progress"></div>
-                                 <div class="progress-bar-child shrinker timelapse"></div>
-                              </div>
-                              <div class="low-high">
-                                 <h5>Low</h5>
-                                 <h5>High</h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="first-content-single">
-                           <div class="price-psf">
-                              <h4>Unit Price</h4>
-                           </div>
-                           <div class="tab-progress-area">
-                              <div class="preogress-price">
-                                 <div class="progress-price-left">
-                                    <h3 class="heading_3">605K</h3>
-                                 </div>
-                                 <div class="progress-price-right">
-                                    <h3 class="heading_3">1.45 mil</h3>
-                                 </div>
-                              </div>
-                              <div id="progress-bar-container">
-                                 <div class="progress-bar-child progress"></div>
-                                 <div class="progress-bar-child shrinker timelapse"></div>
-                              </div>
-                              <div class="low-high">
-                                 <h5>Low</h5>
-                                 <h5>High</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                     <div class="tab-button-area">
-                        <a href="#" class="tab-btn">Search</a>
-                        <a href="#" class="tab-btn">Rent</a>
-                        <a href="#" class="tab-btn">Nearby</a>
-                     </div>
-                     <div class="first-content">
-                        <div class="first-content-single">
-                           <div class="price-psf">
-                              <h4>Price PSF</h4>
-                           </div>
-                           <div class="tab-progress-area">
-                              <div class="preogress-price">
-                                 <div class="progress-price-left">
-                                    <h3 class="heading_3">$1,700</h3>
-                                 </div>
-                                 <div class="progress-price-right">
-                                    <h3 class="heading_3">$2,690</h3>
-                                 </div>
-                              </div>
-                              <div id="progress-bar-container">
-                                 <div class="progress-bar-child progress"></div>
-                                 <div class="progress-bar-child shrinker timelapse"></div>
-                              </div>
-                              <div class="low-high">
-                                 <h5>Low</h5>
-                                 <h5>High</h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="first-content-single">
-                           <div class="price-psf">
-                              <h4>Unit Price</h4>
-                           </div>
-                           <div class="tab-progress-area">
-                              <div class="preogress-price">
-                                 <div class="progress-price-left">
-                                    <h3 class="heading_3">605K</h3>
-                                 </div>
-                                 <div class="progress-price-right">
-                                    <h3 class="heading_3">1.45 mil</h3>
-                                 </div>
-                              </div>
-                              <div id="progress-bar-container">
-                                 <div class="progress-bar-child progress"></div>
-                                 <div class="progress-bar-child shrinker timelapse"></div>
-                              </div>
-                              <div class="low-high">
-                                 <h5>Low</h5>
-                                 <h5>High</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-        </div>
-      </div>
-   </section>
-   <!-- ===================================================================================
-                                 Rent Tab Area End 
-   =====================================================================================-->
-
-   <!-- ===================================================================================
-                                 Avg Price Area Start
-   =====================================================================================-->
-   <section class="Avg_Price">
-      <div class="container">
-        <div class="rent_max_width">
-            <div class="Avg_Price_content">
-               <div class="Avg_Price_title">
-                  <h3 class="heading_3">Avg price gain</h3>
-                  <h3 class="heading_3">45.45%</h3>
-               </div>
-               <div class="Avg_Price_Chart">
-                  <p>PSF Price</p>
-                  <img class="desk_chart" src="assets/images/avg_price.png" alt="chart_img">
-                  <img class="mobile_chart" src="assets/images/avg_price_mobile.png" alt="chart_img">
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ===================================================================================
-                                 Avg Price Area Start
-   =====================================================================================-->
-
-   <!-- ===================================================================================
-                                     Value Area Start
-   =====================================================================================-->
-   <section class="Value_area">
-      <div class="container">
-        <div class="rent_max_width">
-            <div class="Avg_Price_content">
-               <div class="Avg_Price_title">
-                  <h3 class="heading_3">Volume</h3>
-                  <h3 class="heading_3">11</h3>
-               </div>
-               <div class="Avg_Price_Chart">
-                  <p>Transactions</p>
-                  <img class="desk_chart" src="assets/images/value.png" alt="value_img">
-                  <img class="mobile_chart" src="assets/images/value_mobile.png" alt="value_img">
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ===================================================================================
-                                   Value Area Start
-   =====================================================================================-->
-
-   <!-- ===================================================================================
-                                   Pricing Table Area Start
-   =====================================================================================-->
-   <section class="Pricing_Table_area">
-      <div class="container">
-        <div class="rent_max_width">
-            <div class="Pricing_common_table">
-               <div class="table-responsive">
-                  <table class="table">
-                     <thead>
-                        <tr>
-                           <th>Unit Price</th>
-                           <th>PSF Price</th>
-                           <th>Size</th>
-                           <th>Date</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                        <tr>
-                           <td>$605,888</td>
-                           <td>$1,607</td>
-                           <td>377 sqft</td>
-                           <td>May 23</td>
-                        </tr>         
-                     </table>
-                  </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ===================================================================================
-                                   Pricing Table Area End
-   =====================================================================================-->
+   </section>     
+   
 
    <!-- ===================================================================================
                                  Footer Area Start 
