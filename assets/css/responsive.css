@@ -5,6 +5,10 @@
 	}
 }
 @media all and (max-width: 991px){
+	.header-nav nav ul {
+		column-gap: 35px;
+	}
+
 	/* Pricing Page  */
 	.pricing-single-grid img{
 		display: none;
@@ -123,7 +127,7 @@
 		right: -5px;
 	}
 	.color_span { 
-		z-index: 9;
+		z-index: 1;
 	}
 	.mobile_hide_img{
 		display: none;
