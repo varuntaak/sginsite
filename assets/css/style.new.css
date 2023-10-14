@@ -106,12 +106,17 @@ img{
   line-height: 36px;
   /* letter-spacing: -1%; */
 }
+.heading_4{
+  font-size: 14px;
+  color: #6270A0;
+}
 .pera_text{
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
   color: #6270A0;
 }
+
 .text_26{
 	font-size: 26px;
 	font-weight: 800;
@@ -138,7 +143,7 @@ img{
 	font-weight: 600;
 	line-height: 27px;
 	letter-spacing: 0em;
-	color: #000929;	
+	color: #000929;
 }
 .container{
   max-width: 1140px;
@@ -383,6 +388,10 @@ img{
   margin: auto;
   padding: 5px;
 }
+.list_type_selection{
+  background: rgba(69, 10, 167, 0.03);
+  margin-top: 25px;
+}
 .home_tab .nav{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,10 +482,10 @@ img{
 /* ===================================================================
                             Pricing Page CSS Start
 ====================================================================*/
-/* .pricing-banner-section{
-  background: url(../images/header-bg.png) no-repeat scroll center center / cover;
-  background-size: 100% 100%;
-} */
+/*.pricing-banner-section{*/
+/*  background: url(../images/header-bg.png) no-repeat scroll center center / cover;*/
+/*  background-size: 100% 100%;*/
+/*}*/
 .pricing-banner-section{
   background: #F0EFFB;
 }
@@ -498,15 +507,24 @@ img{
           flex-direction: column;
   row-gap: 25px;
   padding-bottom: 37px;
+  /*margin-top: -140px;*/
   max-width: 949px;
   width: 100%;
   margin: auto;
-  /* margin-top: -140px; */
 }
 .pricing-main>.pera_text{
 	font-weight: 600;
 	padding-bottom: 20px;
 	color: #000929;
+}
+.pricing-main > p {
+  color: #450AA7;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 145%;
+  letter-spacing: -0.09px;
+  padding: 20px 0;
 }
 .pricing-single{
   display: -webkit-box;
@@ -521,7 +539,7 @@ img{
   border-radius: 15px;
   background: #FFF;
   padding: 45px 55px;
-width: 100%;
+  width: 100%;
 }
 .id-area{
   display: -webkit-box;
@@ -565,6 +583,15 @@ width: 100%;
   line-height: 150%;
   padding: 7px 0;
 }
+
+.pricing-single-left h6{
+  color: #7A64F4;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 7px 0;
+}
+
 .pricing-single-left p{
   color: #6270A0;
   font-size: 14px;
@@ -677,24 +704,28 @@ width: 100%;
 /* ===================================================================
                             Rent Page CSS Start
 ====================================================================*/
-/* .rent-banner-section{
-  background: url(../images/header-bg.png) no-repeat scroll center center / cover;
-  background-size: 100% 100%;
-} */
+/*.rent-banner-section{*/
+/*  background: url(../images/header-bg.png) no-repeat scroll center center / cover;*/
+/*  background-size: 100% 100%;*/
+/*}*/
 .rent-banner-section{
   background: #F0EFFB;
   border-bottom: 2px solid #6270a02d;
 }
-/* .rent-banner-heading{
-  padding: 40px 0 185px 0;
-  text-align: center;
-} */
+/*.rent-banner-heading{*/
+/*  padding: 40px 0 185px 0;*/
+/*  text-align: center;*/
+/*}*/
 .rent-banner-heading{
   padding: 40px 0 102px 0;
   text-align: center;
 }
 .rent-banner-heading2{
   padding: 40px 0 102px 0;
+}
+.rent-banner-heading3{
+  padding: 60px 0 240px 0;
+  text-align: center;
 }
 .rent-banner-heading p{
   color: #450AA7;
@@ -841,6 +872,9 @@ width: 100%;
   font-size: 14px;
   font-weight: 500;
   line-height: 160%;
+}
+.tab-grid-single .heading_3.green{
+  color: #77BF2F;
 }
 /* Progress CSS  */
 #progress-bar-container {
@@ -1062,12 +1096,29 @@ width: 100%;
   margin: auto;
 }
 .rent_max_width2{
-  margin-top: 74px;
+   margin-top: 74px;
 }
 .Avg_Price_content{
   background: #FFF;
   padding: 51px 44px;
   border-radius: 10px;
+}
+.Txn_Table_title{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 55px 44px 30px;
+}
+.Txn_Table_title .heading_4 {
+    background: #F8F5FF;
+    padding: 9px;
+    border-radius: 16px;
 }
 .Avg_Price_title {
   display: -webkit-box;
@@ -1080,6 +1131,22 @@ width: 100%;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 60px;
+}
+.Avg_Price_title .heading_3.gain_value.green{
+  color: #77BF2F;
+}
+.Avg_Price_title .heading_3.gain_value.red{
+  color: #FF0000;
+}
+.Avg_Price_title .heading-3-group {
+  display: flex;
+  align-items: baseline;
+  column-gap: 6px;
+}
+.Avg_Price_title .heading-3-group img{
+  width: 19px;
+  height: 19px;
+  display: block;
 }
 .Avg_Price_Chart{
   display: -webkit-box;
@@ -1115,6 +1182,9 @@ width: 100%;
 }
 .Pricing_Table_area{
   margin-bottom: 59px;
+}
+.tab-content-first-item{
+  margin-top: 50px;
 }
 .Pricing_common_table .table tr{
   white-space: nowrap;
@@ -1242,15 +1312,25 @@ width: 100%;
 	margin: 40px 0;
 }
 
+.search_two_content .search_banner_box {
+  justify-content: center;
+}
+
 
 
 .seach_btn:first-child {
 	border-right: 2px solid #6270A0;
-	padding-right: 70px;
+	padding-right: 25px;
 }
 
 .seach_btn:last-child {  
-	padding-left: 70px;
+	padding-left: 25px;
+}
+
+.middle_child {
+    border-right: 2px solid #6270A0;
+    padding-right: 23px;
+    padding-left: 23px;
 }
 
 .search_box_area{
@@ -1264,7 +1344,7 @@ width: 100%;
 	padding: 20px 25px;
 	width: 100%;
 	color: #6270A0;
-	font-size: 16px; 
+	font-size: 16px;
 	font-weight: 500;
 	/* line-height: 160%; */
 }
@@ -1302,6 +1382,10 @@ width: 100%;
 	border: 1px solid #450AA7 !important;
 }
 
+.search_summary_item:hover {
+  cursor: pointer;
+}
+
 
 /* ===================================================================
                             Search Area Css End
@@ -1317,6 +1401,7 @@ width: 100%;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+    margin-bottom: 40px;
 }
 
 .search_box_area22{
@@ -1324,20 +1409,22 @@ width: 100%;
 }
 
 .found_text p {
-	color: #6270A0;
+	/*color: #6270A0;*/
+	color: #450AA7;
 	text-align: center;
 	font-size: 16px; 
 	font-weight: 500;
 	line-height: 160%;
-	margin: 40px 0;
+	/*margin: 40px 0;*/
+    margin-bottom: 20px;
 }
 
 .search_box_area.search_box_area22 input {
 	border: 2px solid rgba(98, 112, 160, 0.25);
 }
 
-.search_box_area.search_box_area22 button { 
-	top: 7.2px; 
+.search_box_area.search_box_area22 button {
+    top: 7.2px;
 }
 
 .body_bg{
@@ -1345,8 +1432,19 @@ width: 100%;
 }
 
 .search_result_title {
-	padding: 10px 0;
-	border-bottom: 2px solid #f0f0f0;
+  padding: 10px 10px 10px 0;
+  border-bottom: 2px solid #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: space-between;
+}
+
+.search_result_title p {
+  margin-bottom: 0;
 }
 
 .search_result_title h3 {
@@ -1390,7 +1488,8 @@ width: 100%;
 }
 
 .search_result_body ul li button:hover{
-  opacity: 0.62;
+  /*opacity: 0.62;*/
+  color : #450AA7
 }
 
 .search_result_body {
@@ -1403,16 +1502,16 @@ width: 100%;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap; 
-  -webkit-box-pack: justify; 
-      -ms-flex-pack: justify; 
-          justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
 }
  
 .search_result_body ul li {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 19%;
 	        flex: 0 0 19%; 
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
+  margin: 5px;
 }
 
 .load_more_btn {
@@ -2035,8 +2134,8 @@ width: 100%;
   border-radius: 15px;
   border: 1px solid #FFF;
   background: #450AA7; 
-	padding: 16px 33px;
-	width: 152px;
+	/*padding: 16px 33px;*/
+	/*width: 152px;*/
 	color: #fff;
 	text-align: center;
 	font-size: 16px; 
@@ -2125,6 +2224,8 @@ width: 100%;
 	border-radius: 10px;
 	background: #FFF;
 	padding: 27px;
+    overflow-y: scroll;
+    height: 350px;
 }
 
 .maps_table thead tr th {
@@ -2215,14 +2316,7 @@ width: 100%;
 /* ===================================================================
                             Contact Area Css Start
 ====================================================================*/
-.contact_shep_main{
-	background: url(../images/header-bg.png) no-repeat scroll center center / cover;
-    background-size: 100% 100%;
-	border-bottom: none;
-}
-.contact_shep_main .rent-banner-heading {
-    padding: 40px 0px 135px;
-}
+
 
 .contact_title h2 {
 	color: #000929;
@@ -2656,6 +2750,50 @@ width: 100%;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 160%;
+  	margin: 15px 0 15px 0;
+}
+
+.single_blog_content p {
+	color: #6270A0;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%;
+  	margin: 15px 0 15px 0;
+}
+
+.single_blog_content ul li {
+	color: #6270A0;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+    line-height: 160%;
+    margin: 15px 0 15px 0;
+}
+
+.single_blog_content ul li span {
+    color: #6270A0;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 800;
+}
+
+.single_blog_content h1 {
+    color: #000929;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 30px 0 15px 0;
+}
+
+.single_blog_content h2 {
+    color: #000929;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 30px 0 15px 0;
 }
 
 .single_blog_content h3 {
@@ -2665,6 +2803,36 @@ width: 100%;
 	font-weight: 500;
 	line-height: normal;
 	margin: 30px 0 15px 0;
+}
+
+.single_blog_content table {
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.single_blog_content table tr{
+  white-space: nowrap;
+}
+
+.single_blog_content table tr{
+  white-space: nowrap;
+}
+
+.single_blog_content table tr th{
+  padding: 2rem 2rem .8rem 2.7rem !important;
+  border-bottom: none !important;
+  color: #6270A0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.single_blog_content table tbody tr td{
+  padding: 1.2rem 4rem 1.2rem 2.7rem !important;
+  color: #000929;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 .share_this ul {
@@ -2733,8 +2901,8 @@ width: 100%;
 }
 
 .mobile_menu {
-	padding: 40px;
-	position: absolute;
+  padding: 40px 40px 100px;
+  position: absolute;
 	z-index: 9;
 	background: #ffff;
 	width: 95%;
@@ -2756,7 +2924,7 @@ width: 100%;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
-   display: none; 
+  display: none;
 }
 
 .mobile_menu ul li p {
@@ -2824,23 +2992,9 @@ width: 100%;
   opacity: 0.6000000238418579;
   background: #000; 
 }
-.progress_overlay {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	/* background: #ddd; */
-	top: 0;
-	left: 0;
-	z-index: 1;
-  display: none;
-  opacity: 0.6000000238418579;
-  background: #000;
-}
-.center-screen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
+
+
+
  input:focus-within {
 	outline: none;
 }
@@ -2913,8 +3067,9 @@ width: 100%;
 	left: 0;
 }
 
+
 .Banner_main_area {
-	/* position: absolute; */
+	/*position: absolute;*/
 	width: 100%;
 	top: 0;
 }
@@ -2934,7 +3089,7 @@ width: 100%;
 .search_banner_content {
 	margin-top: 152px;
 	margin-bottom: 38px;
-  position: relative;
+	position: relative;
 }
 .searc2_shape_mobile img{
   display: none;
@@ -2947,20 +3102,20 @@ width: 100%;
 .mobile_show_img{
   display: none;
 }
+ 
 
+/* .footer_area_search2 {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*.banner-image.searc2_banner_img {*/
+/*	position: absolute;*/
+/*	right: 0;*/
+/*	top: 0;*/
+/*	z-index: 99;*/
+/*}*/
 /************************* Cashflow Css Start *********************/
 .Cashflow-banner-heading{
 	padding: 40px 0px 187px 0px;
@@ -2972,7 +3127,6 @@ width: 100%;
 }
 .range_content {
     margin-top: -100px;
-    margin-bottom: 35px;
 	display: flex;
 	gap: 25px;
 }
@@ -2996,7 +3150,6 @@ width: 100%;
 	margin-top: 10px;
 	border: 1px solid #E0E2EC;
 }
-
 .slider-range .slider .tooltip.bs-tooltip-top {
     margin-top: -44px;
 }
@@ -3057,7 +3210,7 @@ width: 100%;
     background-image: -webkit-linear-gradient(top, #A2CFFE, #A2CFFE);
     background-image: -o-linear-gradient(top, #A2CFFE, #A2CFFE);
 }
-.slider-range .slider.slider-horizontal .slider-selection, 
+.slider-range .slider.slider-horizontal .slider-selection,
 .slider-range .slider.slider-horizontal .slider-track-low,
 .slider-range .slider.slider-horizontal .slider-track-high {
     height: 100%;
@@ -3073,6 +3226,7 @@ width: 100%;
     left: 0;
     border-radius: 10px;
 }
+
 .pricing_form_main .slider-range .slider.slider-horizontal .slider-track{
 	height: 7px;
 }
@@ -3092,7 +3246,7 @@ width: 100%;
 	padding-bottom: 0px;
 }
 .cash_flow_content{
-	max-width: 500px;
+	max-width: 391px;
 	width: 100%;
 	padding: 58px 42px;
 	background: #FFF;
@@ -3107,7 +3261,6 @@ width: 100%;
 	justify-content: space-between;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #6270a049;
-    column-gap: 50px;
 }
 .cash_flow_content .single_cash_flow:last-child{
 	padding-bottom: 0px;
@@ -3163,6 +3316,10 @@ width: 100%;
 	color: #6270A0;
 }
 
+/*.Banner_main_area.banner_main_section .banner-area {*/
+/*	background: transparent;*/
+/*}*/
+
 .filter_content {
     width: 100%;
     height: 56px;
@@ -3188,7 +3345,7 @@ width: 100%;
 }
 .range_btn_area{
 	margin-top: 30px;
-	display: flex;
+    display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 17px;
@@ -3201,14 +3358,17 @@ width: 100%;
 	box-shadow: none;
 }
 
-
+/*.banner-content.search_banner_content h1 {*/
+/*	position: relative;*/
+/*	z-index: 99999;*/
+/*}*/
 
 /* Update rent page css ***************************** */
 .Cashflow_banner_section{
   background: url(../images/header-bg.png) no-repeat scroll center center / cover;
   background-size: 100% 100%;
   border-bottom: none;
-} 
+}
 .new_tab_main {
     margin-top: -51px;
 }
@@ -3227,7 +3387,7 @@ width: 100%;
 	flex-wrap: nowrap;
     gap: 65px;
 }
-.new_tab_content .nav-tabs .nav-item.show .nav-link, 
+.new_tab_content .nav-tabs .nav-item.show .nav-link,
 .new_tab_content .nav-tabs .nav-link.active {
 	color: #450AA7;
 	background-color: transparent;
@@ -3243,32 +3403,17 @@ width: 100%;
     margin-bottom: 50px;
 }
 
+
+/*.search_banner_content .search_box_area input { */
+/*	box-shadow: 0 2px 10px #ddd;*/
+/*}*/
 .another_content{
 	margin-top: 74px;
 	padding-bottom: 59px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.Footer_area.footer_area_search2 {*/
+/*	margin-top: 85px;*/
+/*}*/
 
 .Pricing_form_area{
 	margin-top: -235px;
@@ -3322,22 +3467,22 @@ width: 100%;
 	min-width: 155px;
 	width: 100%;
 }
-.select_btn{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 44px;
-	background: #FFF;
-	color: #000929;
-	font-size: 14px;
-	font-weight: 600;
-	padding: 11px 15px;
-	border-radius: 7px;
-	line-height: 22px;
-	text-align: center;
-	cursor: pointer;
-
+.select_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    background: #FFF;
+    color: #000929;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 15px;
+    border-radius: 7px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
 }
+
 .select_menu .options{
 	position: absolute;
 	padding: 5px;
@@ -3405,7 +3550,7 @@ width: 100%;
     background-image: -webkit-linear-gradient(top, #CACBDB, #CACBDB);
     background-image: -o-linear-gradient(top, #CACBDB, #CACBDB);
 }
-.Distance_range .slider.slider-horizontal .slider-selection, 
+.Distance_range .slider.slider-horizontal .slider-selection,
 .Distance_range .slider.slider-horizontal .slider-track-low,
 .Distance_range .slider.slider-horizontal .slider-track-high {
     background: #CACBDB;
@@ -3495,7 +3640,7 @@ width: 100%;
   background-size: 100% 100%;
   border-bottom: none;
   padding-top: 84px;
-} 
+}
 
 
 
@@ -3594,15 +3739,16 @@ width: 100%;
 	padding-bottom: 5px;
 	padding-top: 10px;
 }
-.mobile_filter_content label{
-	color: #6270A0;
-	font-weight: 600;
-	font-size: 14;
-	line-height: 22px;
-	padding-left: 6px;
-	display: block;
-	width: 100%;
+.mobile_filter_content label {
+    color: #6270A0;
+    font-weight: 600;
+    font-size: 14;
+    line-height: 22px;
+    padding-left: 6px;
+    display: block;
+    width: 100%;
 }
+
 .mobile_filter_content ul li{
 	display: flex;
 	align-items: center;
@@ -3615,47 +3761,9 @@ width: 100%;
 .mobile_filter_content ul li:last-child{
 	border-bottom: none;
 }
-/*
-Error messages CSS
- */
-.error{
-    color: #dc0707c4;
-    display: none;
-}
-
-.error_centered{
-    margin-top: 10px;
-    text-align: center;
-}
-
-/*
-General
- */
-.critical-link{
-  color: #450AA7;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 145%;
-  letter-spacing: -0.09px;
-}
-.critical-link p{
-    color: #450aa7a3;
-    font-size: 14px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.desk_show_long{*/
+/*	display: none;*/
+/*}*/
+/*.desk_hide_long{*/
+/*	display: block;*/
+/*}*/

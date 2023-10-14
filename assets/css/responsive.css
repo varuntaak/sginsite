@@ -24,7 +24,11 @@
 	.search_result_body ul li {
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 0 24%;
-		        flex: 0 0 24%; 
+		        flex: 0 0 24%;
+		margin: 0 15px 0 0;
+	}
+	.search_result_body ul {
+		justify-content: space-between;
 	}
 
 	/* update responsive ***************************************************************/
@@ -48,13 +52,12 @@
 		max-width: inherit;
 		width: 169px;
 	}
-	
 }
 @media all and (min-width: 768px){
 	.header-menu{
 		display: block flex !important;
 	}
-	.mobile_menu{
+    .mobile_menu{
 		display: none !important;
 		visibility: hidden !important;
 		opacity: 0 !important;
@@ -65,7 +68,7 @@
 }
 @media all and (max-width: 767px){
 	/* Mobile menu ----------------------------*/
-	.mobile_menu {
+    	.mobile_menu {
 		padding: 40px;
 		position: absolute;
 		z-index: 9;
@@ -80,16 +83,16 @@
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
-		        flex-direction: column; 
-		-webkit-box-pack: justify; 
-		    -ms-flex-pack: justify; 
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
 		        justify-content: space-between;
 	  -webkit-transition: 0.3s;
 	  -o-transition: 0.3s;
 	  transition: 0.3s;
 	  opacity: 0;
 	  visibility: hidden;
-	   display: none; 
+	   display: none;
 	}
 #menu_close {
 	position: absolute;
@@ -98,15 +101,15 @@
 }
 .mobile_overlay {
 	width: 100%;
-	height: 100vh; 
+	height: 100vh;
 	position: absolute;
 	/* background: #ddd; */
 	top: 0;
 	left: 0;
 	z-index: 1;
-  display: none; 
+  display: none;
   opacity: 0.6000000238418579;
-  background: #000; 
+  background: #000;
 }
 
 	.mobile-menu {
@@ -243,6 +246,10 @@
 		font-size: 14px;
 		padding: 5px 0;
 	}
+	.pricing-single-left h6 {
+		font-size: 14px;
+		padding: 5px 0;
+	}
 	.pricing-single-right {
 		max-width: 100%;
 		padding: 25px 0;
@@ -355,6 +362,7 @@
 	.Pricing_common_table .table tbody tr td {
 		padding: 1.6rem 1rem 1rem 1.6rem !important;
 		font-size: 14px;
+        text-align: center;
 	}
 	.pricing_table_title {
 		padding: 21px 24px 0px 24px;
@@ -381,6 +389,9 @@
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 0 33%;
 		        flex: 0 0 33%;
+	}
+	.search_result_body ul {
+		justify-content: space-between;
 	}
 	.home_tab.search_tab .nav-link {
 		width: 161px;
@@ -538,8 +549,8 @@
 		width: 100%;
 	}
 	.rent_btn,
-	.buy_btn { 
-		width: 100%; 
+	.buy_btn {
+		width: 100%;
 		padding: 10px 33px;
 		font-size: 14px;
 	}
@@ -587,19 +598,7 @@
 	.blog_main_area {
 		margin-top: 145px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-	/* update responsive ***************************************************************/
+    /* update responsive ***************************************************************/
 	.range_content {
 		flex-direction: column;
 		justify-content: center;
@@ -615,8 +614,6 @@
 		margin-top: 35px;
 		padding-bottom: 40px;
 	}
-
-
 }
 
 @media all and (max-width:575px){
@@ -764,7 +761,7 @@
 		width: 100%;
 	}
 	.search_box_area input { 
-		padding: 14px 25px; 
+		padding: 14px 25px;
 	}
 	.button_search button { 
 		padding: 6px 14px;  
@@ -781,10 +778,13 @@
 		font-size: 12px; 
 	}
 	.search_result_body ul li { 
-		margin-bottom: 10px; 
+		margin: 0 0 10px 0;
 		-webkit-box-flex: 0; 
 		    -ms-flex: 0 0 48%; 
 		        flex: 0 0 48%;
+	}
+	.search_result_body ul {
+		justify-content: space-between;
 	}
 	.search_two_content p { 
 		font-size: 14px; 
@@ -875,12 +875,27 @@
 		padding: 1rem .9rem 1rem .9rem !important;
 		font-size: 13px;
 	}
+	.single_blog_content table tr th{
+	  	padding: 1rem .9rem 1rem .9rem !important;
+		font-size: 13px;
+	}
+	.single_blog_content table tbody tr td{
+		padding: 1rem .9rem 1rem .9rem !important;
+		font-size: 13px;
+	}
+	.single_blog_content table {
+		background: #FFF;
+	  	border-radius: 10px;
+	}
 	.heading_3{
 		font-size: 18px;
 		line-height: 30px;
 	}
 	.Avg_Price_title {
 		padding-bottom: 20px;
+	}
+	.Txn_Table_title{
+		padding: 20px 20px 15px;
 	}
 	.about_left_item p { 
 		margin: 15px 0;
@@ -1032,6 +1047,7 @@
 	  }
 	.new_tab_main .maps_box{
 		margin-top: 41px;
+        margin-bottom: 50px;
 	}
 	.rent_max_width2 {
 		margin-top: 41px;
@@ -1048,7 +1064,7 @@
 	.new_tab_content .nav-tabs::-webkit-scrollbar {
 		display: none;
 	}
-	  
+
 	/* Hide scrollbar for IE, Edge add Firefox */
 	.new_tab_content .nav-tabs .scrollbar-hidden {
 		-ms-overflow-style: none;
@@ -1124,24 +1140,24 @@
 	.pricing_form_main .offcanvas-header {
 		padding: 54px 25px 0px 25px;
 	}
-	
+
 	.offcanvas_block{
 		display: block;
 	}
 
-	.offcanvas_main2 .offcanvas-sm.hiding, 
-	.offcanvas_main2 .offcanvas-sm.show, 
+	.offcanvas_main2 .offcanvas-sm.hiding,
+	.offcanvas_main2 .offcanvas-sm.show,
 	.offcanvas_main2 .offcanvas-sm.showing {
 		height: 90vh;
 		border-radius: 30px 30px 0px 0px;
 	}
-	.occanvas_parent_class .offcanvas-sm.hiding, 
-	.occanvas_parent_class .offcanvas-sm.show, 
+	.occanvas_parent_class .offcanvas-sm.hiding,
+	.occanvas_parent_class .offcanvas-sm.show,
 	.occanvas_parent_class .offcanvas-sm.showing {
 		height: 50vh;
 		border-radius: 30px 30px 0px 0px;
 	}
-	
+
 	.pricing_form_content{
 		display: none;
 	}
@@ -1158,7 +1174,6 @@
 	.Pricing_form_area {
 		padding-bottom: 29px;
 	}
-
 
 }
 
@@ -1206,6 +1221,9 @@
 	.search_result_body ul li button { 
 		padding: 11px 8px; 
 	}
+	.search_result_body ul {
+		justify-content: space-between;
+	}
 	.Avg_Price_content {
 		padding: 20px 20px;
 	}
@@ -1225,8 +1243,6 @@
 	.rent_max_width .rent-tab-area .home_tab .nav-link {
 		padding: 14px 15px;
 	}
-
-
 
 	/* update responsive********************************************* */
 	.range_content_left {
@@ -1265,7 +1281,7 @@
 
 
 @media all and (max-width:375px){
-	.range_btn_area .btn_1 {
+    .range_btn_area .btn_1 {
 		padding: 10px 17px;
 	}
 }
