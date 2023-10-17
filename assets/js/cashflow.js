@@ -2,8 +2,21 @@ $(document).ready(function(){
 
     API_ROOT = "https://au48vk6k1f.execute-api.ap-southeast-1.amazonaws.com/"
     CASHFLOW_URL = API_ROOT + "prod"
+    var QUERY = new URLSearchParams(location.search)
     var price = 0
     var rent = 0
+
+    price = QUERY.get('price')
+    rent = QUERY.get('rent')
+    if (QUERY.size > 0) {
+        send_cashflow_request(price, rent)
+
+        if (price) {
+            $("#price").val(price)
+        }
+    }
+
+
     $("#price").on("keyup click", function filter_links(){
         price = this.value
     })
@@ -13,35 +26,7 @@ $(document).ready(function(){
     })
 
     $("#submit").on("click", function get_cashflow(){
-        valid_price = validate_input(price, "price")
-        valid_rent = validate_input(rent, "rent")
-        if (valid_price && valid_rent){
-            console.log("sending request")
-            query = "/?price=" + price
-            if (rent)
-                query = query + "&" + "rent=" + rent
-            query = check_and_add_parameters("tenure", query)
-            query = check_and_add_parameters("downpayment_percentage", query)
-            query = check_and_add_parameters("rate_percentage", query)
-            query = query + "&" + "human_format=True"
-            var url = CASHFLOW_URL + query
-            $('.progress_overlay').show()
-            $.get(url).then(
-              function(response) {
-                  console.log(response)
-                  response = response.replace(/'/ig,'"');
-                  var obj = $.parseJSON( response );
-                  console.log(obj)
-                  refresh_page(obj)
-              },
-              function(jqXHR) {
-                console.log('Error occurred: '+ jqXHR.statusText + ' ' + jqXHR.status);
-                $('.progress_overlay').fadeOut()
-              }
-            );
-        } else {
-            console.log("request condition not met")
-        }
+        load_cashflow()
     })
 
     $('a[href^="#"]').on('click', function(event) {
@@ -58,6 +43,7 @@ $(document).ready(function(){
         $('.progress_overlay').fadeOut()
         $("#cashflow-value").hide().html(obj.monthly_cashflow).fadeIn(3000)
         $("#monthly-payment-value").hide().html(obj.monthly_payment).fadeIn(3000)
+        $("#price-value").hide().html(obj.price).fadeIn(3000)
         $("#interest-paid-value").hide().html(obj.interest_payable).fadeIn(3000)
         $("#interest-paid-percent").hide().html(obj.interest_part_percent).fadeIn(3000)
         $("#equity-paid-value").hide().html(obj.equity_payable).fadeIn(3000)
@@ -105,6 +91,42 @@ $(document).ready(function(){
       if (typeof value === 'number')
           return true
         else return !isNaN(Number(value));
+    }
+
+    function load_cashflow(){
+        valid_price = validate_input(price, "price")
+        valid_rent = validate_input(rent, "rent")
+        if (valid_price && valid_rent){
+            console.log("sending request")
+            send_cashflow_request(price, rent)
+        } else {
+            console.log("request condition not met")
+        }
+    }
+
+    function send_cashflow_request(price, rent){
+        query = "/?price=" + price
+        if (rent)
+            query = query + "&" + "rent=" + rent
+        query = check_and_add_parameters("tenure", query)
+        query = check_and_add_parameters("downpayment_percentage", query)
+        query = check_and_add_parameters("rate_percentage", query)
+        query = query + "&" + "human_format=True"
+        var url = CASHFLOW_URL + query
+        $('.progress_overlay').show()
+        $.get(url).then(
+          function(response) {
+              console.log(response)
+              response = response.replace(/'/ig,'"');
+              var obj = $.parseJSON( response );
+              console.log(obj)
+              refresh_page(obj)
+          },
+          function(jqXHR) {
+            console.log('Error occurred: '+ jqXHR.statusText + ' ' + jqXHR.status);
+            $('.progress_overlay').fadeOut()
+          }
+        );
     }
 
 });

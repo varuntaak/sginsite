@@ -103,11 +103,17 @@ $(document).ready(function(){
         step: 1
      });
 
-
-
     
 });
-
+/**
+   * Preloader
+   */
+let preloader = $('#preloader');
+if (preloader) {
+window.addEventListener('load', () => {
+  preloader.remove()
+});
+}
 // Nice Select
 $(document).ready(function () {
     $('select').niceSelect();
