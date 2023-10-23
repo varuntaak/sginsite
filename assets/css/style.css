@@ -2903,9 +2903,9 @@ img{
 	padding: 25px 0px;
 	cursor: pointer;
 }
-/* .mobile_menu ul li:hover {
+.mobile_menu ul li:hover {
     background: #450aa733;
-} */
+}
 
 .mobile_menu {
 	padding: 40px;
@@ -3263,7 +3263,7 @@ img{
 	padding-top: 10px;
 }
 .range_label :nth-child(2){
-	margin-left: 40px;
+	/*margin-left: 40px;*/
 }
 .range_content_left .single_range{
 	padding-bottom: 30px;
@@ -3793,7 +3793,7 @@ img{
 Error messages CSS
  */
 .error{
-    color: #dc0707c4;
+    color: #dc07079e;
     display: none;
 }
 
@@ -3811,6 +3811,7 @@ General
   font-weight: 700;
   line-height: 145%;
   letter-spacing: -0.09px;
+  text-decoration: underline;
 }
 .critical-link p{
     color: #450aa7a3;
@@ -4021,9 +4022,12 @@ General
   }
 }
 
+.green_text {
+    color: #77BF2F;
+}
 
-
-
-
+.red_text {
+    color: #FF0000;
+}
 
 

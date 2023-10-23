@@ -777,6 +777,7 @@
 	}
 	.search_box_area input { 
 		padding: 14px 25px;
+        font-size: 18px;
 	}
 	.button_search button { 
 		padding: 6px 14px;  
