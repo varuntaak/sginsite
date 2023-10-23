@@ -4025,3 +4025,47 @@ General
 
 
 
+/* search css  */
+
+.back_search {
+	position: absolute;
+	top: 23px;
+	left: 14px;
+	display: none;
+}
+
+.search_suggest {
+	background: #fff;
+	height: 100vh;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	display: none;
+}
+
+.search_suggest ul li a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 20px;
+	margin-bottom: 5px;
+	transition: 0.3s;
+}
+
+.search_suggest ul li a:hover{ 
+	background: #eee;
+}
+
+.search_suggest ul li a p {
+	margin: 0;
+}
+
+.sugget_list {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+}
+
+.sugget_list i {
+	color: #450AA7;
+}
