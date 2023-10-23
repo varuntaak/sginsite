@@ -97,6 +97,17 @@
 	  opacity: 0;
 	  visibility: hidden;
 	   display: none;
+	   overflow-y: scroll;
+	}
+	 /* Hide scrollbar for Chrome, Safari and Opera */
+	.mobile_menu::-webkit-scrollbar {
+	  display: none;
+	}
+	
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.mobile_menu {
+	  -ms-overflow-style: none;  /* IE and Edge */
+	  scrollbar-width: none;  /* Firefox */
 	}
 #menu_close {
 	position: absolute;
@@ -766,6 +777,7 @@
 	}
 	.search_box_area input { 
 		padding: 14px 25px;
+        font-size: 18px;
 	}
 	.button_search button { 
 		padding: 6px 14px;  

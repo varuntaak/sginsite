@@ -66,7 +66,7 @@ $(document).ready(function(){
          ticks_snap_bounds: 200,
          tooltip: 'always',
         formatter: function(value) {
-           return value +'Years ';
+           return value +' Years ';
         },
         ticks_tooltip: true,
         step: 1
@@ -102,6 +102,27 @@ $(document).ready(function(){
         ticks_tooltip: true,
         step: 1
      });
+
+      $("input[data-type='currency']").on({
+        keyup: function() {
+          formatCurrency($(this));
+        }
+      });
+        function formatNumber(n) {
+          // format number 1000000 to 1,234,567
+          return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
+        function formatCurrency(input) {
+          var input_val = input.val();
+          sessionStorage[input.attr("id")] = input_val
+          // don't validate empty input
+          if (input_val === "") { return; }
+          // remove all non-digits
+          input_val = formatNumber(input_val);
+          input_val = "$" + input_val;
+          // send updated string to input
+          input.val(input_val);
+        }
 
     
 });
