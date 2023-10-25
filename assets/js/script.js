@@ -26,6 +26,10 @@ $(document).ready(function(){
         sessionStorage['DISTRICT_PAGE_TYPE'] = district_page_type
     })
 
+    $("#new_search").on("click", function (){
+         $('#condo_search').focus().select()
+    })
+
     $("#pills-profile-tab").on("click", function (){
         district_page_type = NEW
         sessionStorage['DISTRICT_PAGE_TYPE'] = district_page_type
