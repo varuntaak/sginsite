@@ -27,7 +27,7 @@ $(document).ready(function(){
     })
 
     $("#new_search").on("click", function (){
-         $('#condo_search').focus().select()
+         $('#condo_search').focus()
     })
 
     $("#pills-profile-tab").on("click", function (){
