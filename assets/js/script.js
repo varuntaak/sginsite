@@ -241,25 +241,154 @@ window.addEventListener('load', function() {
 });
 
 
-var windowWidth = $(window).width();
-if (windowWidth < 767) {
-    $(".search_input").addClass("search_input_click"); 
-}else{ 
-    $(".search_input").removeClass("search_input_click"); 
+
+// Get the input element by its ID
+
+// $(document).ready(function() {
+//     function checkMediaQuery() {
+//         if (window.matchMedia("(max-width: 575px)").matches) {
+//             $('#search_input').on('click', function() {
+//                 $('.mobile_search_area').addClass('over_search_box');
+//                 $('.mobile_apps').css('display', 'none');
+//                 $('.mobile_search_input').focus();
+//             });
+
+//             $('.mobile_back_search').on('click', function() {
+//                 $('.mobile_search_area').removeClass('over_search_box');
+//                 $('.mobile_apps').css('display', 'block');
+//             });
+//         } else {
+//             // Media query is false (above 575px)
+//             $('#search_input').off('focus');
+//             $('#search_input').off('blur');
+//             $('#search_input').off('click');
+//             $('.mobile_apps').css('display', 'block');
+//             // $('.search_content_area').removeClass('your-class-name');
+//         }
+//     }
+
+//     // Initial check when the page loads
+//     checkMediaQuery();
+
+//     // Check media query on window resize
+//     $(window).resize(function() {
+//         checkMediaQuery();
+//     });
+// });
+
+$(document).ready(function() {
+  function checkMediaQuery() {
+      if (window.matchMedia("(max-width: 575px)").matches) {
+          $('#search_show').on('click', function() {
+              $('.mobile_search_area').addClass('over_search_box');
+              $('.mobile_apps').css('display', 'none');
+              // $('.mobile_search_input').focus();
+          });
+
+          $('.mobile_back_search').on('click', function() {
+              $('.mobile_search_area').removeClass('over_search_box');
+              $('.mobile_apps').css('display', 'block');
+          });
+      } else {
+          // Media query is false (above 575px)
+          $('#search_show').off('click'); // Remove click event handler
+          $('.mobile_apps').css('display', 'block');
+      }
+  }
+
+  // Initial check when the page loads
+  checkMediaQuery();
+
+  // Check media query on window resize
+  $(window).resize(function() {
+      checkMediaQuery();
+  });
+});
+
+
+
+
+
+
+
+
+document.getElementById('search_show').addEventListener('click', function() {
+  focusAndOpenKeyboard('myInput');
+});
+
+function focusAndOpenKeyboard(elementId) {
+  const el = document.getElementById(elementId);
+
+  if (el) {
+      // Create a temporary input element to focus on and open the keyboard
+      let __tempEl__;
+      function focusOnDummyElementToOpenIOSKeyboard() {
+          __tempEl__ = document.createElement('input');
+          __tempEl__.style.position = 'absolute';
+          __tempEl__.style.top = (el.offsetTop + 7) + 'px';
+          __tempEl__.style.left = el.offsetLeft + 'px';
+          __tempEl__.style.height = 0;
+          __tempEl__.style.opacity = 0; // Set opacity to 0 to make it invisible
+          document.body.appendChild(__tempEl__);
+          __tempEl__.focus();
+      }
+
+      // Function to focus on the target element and remove the observer
+      function focusOnElementAndCleanup() {
+          el.focus();
+          if (__tempEl && document.body.contains(__tempEl)) {
+              document.body.removeChild(__tempEl);
+          }
+          if (observer) {
+              observer.disconnect();
+          }
+      }
+
+      // Check if the target element is already visible
+      if (isVisible(el)) {
+          focusOnElementAndCleanup();
+      } else {
+          focusOnDummyElementToOpenIOSKeyboard();
+          let observer;
+
+          // Create a MutationObserver to watch for changes in the DOM
+          observer = new MutationObserver(function (mutationsList) {
+              for (const mutation of mutationsList) {
+                  if (mutation.type === 'childList' && isVisible(el)) {
+                      focusOnElementAndCleanup();
+                      break;
+                  }
+              }
+          });
+
+          // Start observing changes in the parent node (you can change this to a more appropriate parent)
+          observer.observe(document.body, { childList: true, subtree: true });
+      }
+
+
+  }
+
+  // Function to check if the element is visible in the DOM
+  function isVisible(element) {
+      var rect = element.getBoundingClientRect();
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  }
 }
 
-$(document).on('click','.search_input_click',function(){
-    $('.search_box_area').css({'position':'absolute','top': '0','left': '0'});
-    $('.search_box_area input').css({'border-radius':'0','padding': '20px 70px 20px 36px'});
-    $('.button_search button').css({'top':'14.2px','right':'12.2px'});
-    $('.back_search').show();
-    $('.search_suggest').show();
-});
-$(document).on('click','.back_search',function(){
-    $('.search_box_area').css({'position':'relative'});
-    $('.search_box_area input').css({'border-radius':'9px','padding': '14px 25px'});
-    $('.button_search button').css({'top':'7.2px','right':'5.2px'});
-    $('.back_search').hide();
-    $('.search_suggest').hide();
-});
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
