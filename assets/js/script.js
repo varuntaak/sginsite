@@ -331,6 +331,14 @@ function focusAndOpenKeyboard(elementId) {
           __tempEl__.style.opacity = 0; // Set opacity to 0 to make it invisible
           document.body.appendChild(__tempEl__);
           __tempEl__.focus();
+
+           // The keyboard is open. Now do a delayed focus on the target element
+            setTimeout(function() {
+              el.focus();
+              el.click();
+              // Remove the temp element
+              document.body.removeChild(__tempEl__);
+            }, timeout);
       }
 
       // Function to focus on the target element and remove the observer
