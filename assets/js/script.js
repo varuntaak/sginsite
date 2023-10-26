@@ -316,6 +316,19 @@ function focusAndOpenKeyboard(elementId) {
   const el = document.getElementById(elementId);
 
   if (el) {
+      // Create a temporary input element to focus on and open the keyboard
+      let __tempEl__;
+      function focusOnDummyElementToOpenIOSKeyboard() {
+          __tempEl__ = document.createElement('input');
+          __tempEl__.style.position = 'absolute';
+          __tempEl__.style.top = (el.offsetTop + 7) + 'px';
+          __tempEl__.style.left = el.offsetLeft + 'px';
+          __tempEl__.style.height = 0;
+          __tempEl__.style.opacity = 0; // Set opacity to 0 to make it invisible
+          document.body.appendChild(__tempEl__);
+          __tempEl__.focus();
+      }
+
       // Function to focus on the target element and remove the observer
       function focusOnElementAndCleanup() {
           el.focus();
@@ -348,23 +361,14 @@ function focusAndOpenKeyboard(elementId) {
           observer.observe(document.body, { childList: true, subtree: true });
       }
 
-      // Create a temporary input element to focus on and open the keyboard
-      let __tempEl__;
-      function focusOnDummyElementToOpenIOSKeyboard() {
-          __tempEl__ = document.createElement('input');
-          __tempEl__.style.position = 'absolute';
-          __tempEl__.style.top = (el.offsetTop + 7) + 'px';
-          __tempEl__.style.left = el.offsetLeft + 'px';
-          __tempEl__.style.height = 0;
-          __tempEl__.style.opacity = 0; // Set opacity to 0 to make it invisible
-          document.body.appendChild(__tempEl__);
-          __tempEl__.focus();
-      }
+
   }
 
   // Function to check if the element is visible in the DOM
   function isVisible(element) {
-      return element && element.offsetParent !== null;
+      var rect = element.getBoundingClientRect();
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
 }
 
