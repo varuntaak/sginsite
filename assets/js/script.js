@@ -338,7 +338,7 @@ function focusAndOpenKeyboard(elementId) {
               el.click();
               // Remove the temp element
               document.body.removeChild(__tempEl__);
-            }, timeout);
+            }, 100);
       }
 
       // Function to focus on the target element and remove the observer
