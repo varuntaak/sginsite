@@ -160,26 +160,7 @@ function backtotop() {
 }
 backtotop();
 
-  // End Fixed Scroll Area jQuery
-
-// Distance Custom Click
-
-// const optionMenu = document.querySelector('.select_menu'),
-//       selectBtn = optionMenu.querySelector('.select_btn');
-
-// selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-
-
-// window.onclick = function(event){
-//    if(!event.targer.matches(".select_btn")){
-//       var dd = document.getElementsByClassName("options");
-//    }
-//    for(var i = 0; i<dd.length; i++){
-//       var x =dd(i);
-//       if(x.classList.contains('active'))(x.classList.remove('active'))
-//    }
-// }
-
+ 
 
 document.addEventListener("DOMContentLoaded", function() {
    const menuContainer = document.querySelector(".select_menu");
@@ -241,40 +222,6 @@ window.addEventListener('load', function() {
 });
 
 
-
-// Get the input element by its ID
-
-// $(document).ready(function() {
-//     function checkMediaQuery() {
-//         if (window.matchMedia("(max-width: 575px)").matches) {
-//             $('#search_input').on('click', function() {
-//                 $('.mobile_search_area').addClass('over_search_box');
-//                 $('.mobile_apps').css('display', 'none');
-//                 $('.mobile_search_input').focus();
-//             });
-
-//             $('.mobile_back_search').on('click', function() {
-//                 $('.mobile_search_area').removeClass('over_search_box');
-//                 $('.mobile_apps').css('display', 'block');
-//             });
-//         } else {
-//             // Media query is false (above 575px)
-//             $('#search_input').off('focus');
-//             $('#search_input').off('blur');
-//             $('#search_input').off('click');
-//             $('.mobile_apps').css('display', 'block');
-//             // $('.search_content_area').removeClass('your-class-name');
-//         }
-//     }
-
-//     // Initial check when the page loads
-//     checkMediaQuery();
-
-//     // Check media query on window resize
-//     $(window).resize(function() {
-//         checkMediaQuery();
-//     });
-// });
 
 $(document).ready(function() {
   function checkMediaQuery() {
@@ -385,7 +332,18 @@ function focusAndOpenKeyboard(elementId) {
 }
 
 
+$(document).ready(function(){
+    $('.search_type_btn button').click(function(){
+      $('.search_type_btn button').removeClass("active");
+      $(this).addClass("active");
+  });
 
+  $('.mobile_condo_btn button').click(function(){
+    $('.mobile_condo_btn button').removeClass("active");
+    $(this).addClass("active");
+});
+
+});
 
 
 
