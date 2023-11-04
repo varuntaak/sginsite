@@ -4,6 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
    <title>Sginsite - Search</title>
    <link rel="shortcut icon" href="assets/images/Sginsite.png" type="image/x-icon">
    <!-- Bootstrap Css -->
@@ -16,6 +18,11 @@
    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body class="body_bg">
+
+  <div class="mobile_apps">
+
+
+
    <!-- ===================================================================================
                                  Header Area Start 
    =====================================================================================-->
@@ -123,8 +130,12 @@
                         <div class="search_two_content">
                             <p>Type a name of condominium, district, or school</p>
                             <div class="search_box_area search_box_area22 ">
-                                <input type="search" name="" id="" placeholder="Search a condo" >
+                                <input type="search" name="" class="search_input" id="search_input" placeholder="Search a condo" >
                                 <div class="button_search"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+                                
+                            </div>
+                            <div class="m_search_area">
+                               <a id="search_show" href="#">Search</a>
                             </div>
                         </div>
                     </div>
@@ -278,8 +289,6 @@
                                  Search Area End 
    =====================================================================================-->
 
-    
-
    <!-- ===================================================================================
                                  Footer Area Start 
    =====================================================================================-->
@@ -305,10 +314,62 @@
    <!-- ===================================================================================
                                  Footer Area End 
    =====================================================================================-->
+</div>
+
+
+    <!-- Start mobile search area -->
+    <div class="mobile_search_area">
+       <div class="container">
+          <div class="search_content_area">
+            <div class="search_m_title">
+                <div class="close_search_btn mobile_back_search">
+                     <img src="assets/images/close.svg" alt="">
+                </div>
+            </div>
+             <div class="search_top_area">
+               <div class="search_box_for_mobile">
+                   <div class="mobile_search_left">
+                    <div class="mobile_search_button"><button type="submit"> <img src="assets/images/search_icon.svg" alt=""></button></div>
+                        <input type="text" name="search" class="mobile_search_input" id="myInput" placeholder="Search a condo..." >
+                        
+                   </div>
+                   <div class="mobile_search_right">
+                        <div class="search_type_btn">
+                              <button class="active">Buy</button>
+                              <button>Rent</button>
+                        </div>
+                   </div>
+
+               </div>
+
+             </div>
+             <div class="mobile_condo_btn">
+                 <button class="active">Condo</button>
+                 <button>School</button>
+                 <button>District</button>
+             </div>
+             <div class="search_suggest">
+                <ul> 
+                    <li><a href="#"><div class="sugget_list"><div class="suggest_images"><img src="assets/images/fi_1.png" alt=""></div><span class="text_suggesstt"><p>Woodland Condo</p></span></div> <div class="suggest_right_icon"><img src="assets/images/Arrow2.svg" alt=""></div></a></li>  
+                    <li><a href="#"><div class="sugget_list"><div class="suggest_images"><img src="assets/images/fi_2.png" alt=""></div><span class="text_suggesstt"><p>Primary School</p></span></div> <div class="suggest_right_icon"><img src="assets/images/Arrow2.svg" alt=""></div></a></li>  
+                    <li><a href="#"><div class="sugget_list"><div class="suggest_images"><img src="assets/images/fi_1.png" alt=""></div><span class="text_suggesstt"><p>Woodland Condo</p></span></div> <div class="suggest_right_icon"><img src="assets/images/Arrow2.svg" alt=""></div></a></li>  
+                    <li><a href="#"><div class="sugget_list"><div class="suggest_images"><img src="assets/images/fi_2.png" alt=""></div><span class="text_suggesstt"><p>Primary School</p></span></div> <div class="suggest_right_icon"><img src="assets/images/Arrow2.svg" alt=""></div></a></li>   
+                </ul>
+            </div>
+          </div>
+       </div>
+    </div>
+    <!-- End mobile search area -->
 
    <!-- Js Files -->
    <script src="assets/js/jquery-3.6.1.min.js"></script>
    <script src="assets/js/bootstrap.bundle.min.js"></script>
    <script src="assets/js/script.js"></script>
+
+
+
+
+
+
 </body>
 </html>
