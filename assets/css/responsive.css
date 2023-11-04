@@ -88,7 +88,7 @@
 @media all and (max-width: 767px){
 	/* Mobile menu ----------------------------*/
     	.mobile_menu {
-		padding: 40px;
+		padding: 30px;
 		position: absolute;
 		z-index: 9;
 		background: #ffff;
@@ -451,7 +451,7 @@
 	.about_postion_text h3 { 
 		font-size: 24px; 
 	}
-	.about_postion_text h3:after { 
+	.about_postion_text h3:after {
 		height: 2px; 
 	}
 	.about_left_item {
@@ -717,7 +717,7 @@
 	.about_item_main_area {
 		padding-top: 15px;
 	}
-	.about_postion_text h3:after { 
+	.about_postion_text h3:after {
 		width: 41px;  
 		top: -20px; 
 	}
@@ -904,7 +904,7 @@
 		display: none;
 	}
 	.Review_inner_content { 
-		-ms-grid-columns: (1fr)[1]; 
+		-ms-grid-columns: (1fr)[1];
 		    grid-template-columns: repeat(1, 1fr);
 	}
 	.Review_top_area {
@@ -1318,7 +1318,7 @@
 		align-items: center;
 	}
 	.mobile_search_button {
-		margin: 0 10px 0 15px;
+		margin: 0 15px 0 5px;
 	}
 	.search_top_area {
 		padding-bottom: 20px;
@@ -1352,7 +1352,7 @@
 		font-weight: 600;
 		color: #FFF;
 	}
-	
+
 	.mobile_search_area {
 		display: block;
 		position: fixed;
@@ -1391,7 +1391,7 @@
 		margin-top: -2px;
 	}
 
-	/* .search_suggest ul li a:hover{ 
+	/* .search_suggest ul li a:hover{
 	  background: #eee;
 	} */
 
@@ -1423,7 +1423,7 @@
 	  text-align: left;
 	  display: flex;
 	}
-	 
+
 	.search_suggest ul li a span img {
 	  width: 50px;
 	  margin-right: 10px;

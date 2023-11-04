@@ -160,7 +160,7 @@ function backtotop() {
 }
 backtotop();
 
- 
+
 
 document.addEventListener("DOMContentLoaded", function() {
    const menuContainer = document.querySelector(".select_menu");
@@ -232,7 +232,7 @@ $(document).ready(function() {
               // $('.mobile_search_input').focus();
           });
 
-          $('.mobile_back_search').on('click', function() {
+          $('#mobile-search-go_back-arrow').on('click', function() {
               $('.mobile_search_area').removeClass('over_search_box');
               $('.mobile_apps').css('display', 'block');
           });
@@ -269,6 +269,8 @@ function focusAndOpenKeyboard(elementId) {
   if (el) {
       // Create a temporary input element to focus on and open the keyboard
       let __tempEl__;
+      let observer;
+
       function focusOnDummyElementToOpenIOSKeyboard() {
           __tempEl__ = document.createElement('input');
           __tempEl__.style.position = 'absolute';
@@ -291,8 +293,8 @@ function focusAndOpenKeyboard(elementId) {
       // Function to focus on the target element and remove the observer
       function focusOnElementAndCleanup() {
           el.focus();
-          if (__tempEl && document.body.contains(__tempEl)) {
-              document.body.removeChild(__tempEl);
+          if (__tempEl__ && document.body.contains(__tempEl__)) {
+              document.body.removeChild(__tempEl__);
           }
           if (observer) {
               observer.disconnect();
@@ -304,7 +306,6 @@ function focusAndOpenKeyboard(elementId) {
           focusOnElementAndCleanup();
       } else {
           focusOnDummyElementToOpenIOSKeyboard();
-          let observer;
 
           // Create a MutationObserver to watch for changes in the DOM
           observer = new MutationObserver(function (mutationsList) {

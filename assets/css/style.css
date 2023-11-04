@@ -39,7 +39,7 @@ img{
   width: 100%;
 }
 input {
-  -webkit-appearance: none !important; 
+  -webkit-appearance: none !important;
   /* Disable default iOS styling */
   /* Add any other iOS-specific styling here */
 }
@@ -1276,14 +1276,14 @@ input {
   margin-bottom: 40px;
 }
 
-.search_tab .nav-link { 
-  padding: 8px 38px; 
+.search_tab .nav-link {
+  padding: 8px 38px;
 }
 
 
 .search_two_content p {
   color: #000929;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 500;
   line-height: 160%;
   letter-spacing: -0.09px;
@@ -1296,14 +1296,14 @@ input {
 
 .seach_btn h3 {
   color: #450AA7;
-  font-size: 32px; 
+  font-size: 32px;
   font-weight: 700;
   line-height: 125%;
   letter-spacing: -0.32px;
 }
 .seach_btn p {
   color: #6270A0;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   line-height: 160%;
 }
@@ -1316,7 +1316,7 @@ input {
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; 
+          align-items: center;
   margin: 40px 0;
 }
 
@@ -1354,6 +1354,7 @@ input {
   color: #6270A0;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 10px;
   /* line-height: 160%; */
 }
 
@@ -1420,7 +1421,7 @@ input {
   /*color: #6270A0;*/
   color: #450AA7;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   line-height: 160%;
   /*margin: 40px 0;*/
@@ -1461,7 +1462,7 @@ input {
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.72px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   border-left: 3px solid  #450AA7;;
   -webkit-box-sizing: border-box;;
           box-sizing: border-box;
@@ -1486,7 +1487,7 @@ input {
   background: #FFF;
   padding: 11px 17px;
   color: #6270A0;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 500;
   width: 100%;
   line-height: 160%;
@@ -1509,7 +1510,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
 }
@@ -1517,14 +1518,14 @@ input {
 .search_result_body ul li {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 19%;
-          flex: 0 0 19%; 
+          flex: 0 0 19%;
   /*margin-bottom: 15px;*/
   margin: 5px;
 }
 
 .load_more_btn {
   color: #450AA7;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 600;
   line-height: 160%;
   text-transform: capitalize;
@@ -1591,7 +1592,7 @@ input {
 .section_title h2 {
   color: #000929;
   text-align: center;
-  font-size: 60px; 
+  font-size: 60px;
   font-weight: 700;
   line-height: 119%;
   letter-spacing: -0.6px;
@@ -1601,7 +1602,7 @@ input {
 .section_title p {
   color: #6270A0;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   line-height: 160%;
 }
@@ -1638,7 +1639,7 @@ input {
 .about_postion_text p {
   color: #6270A0;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   line-height: 160%;
 }
@@ -1661,7 +1662,7 @@ input {
 
 .about_left_item h3 {
   color: #000929;
-  font-size: 40px;  
+  font-size: 40px;
   font-weight: 700;
   line-height: 127.5%;
   letter-spacing: -0.4px;
@@ -1669,7 +1670,7 @@ input {
 
 .about_left_item p {
   color: #6270A0;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   line-height: 160%;
   margin: 25px 0;
@@ -1678,7 +1679,7 @@ input {
 .about_left_item a {
   color: #450AA7;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 600;
   line-height: 150%;
 }
@@ -1741,7 +1742,7 @@ input {
 .single_about_item h4 {
   color: #000929;
   text-align: center;
-  font-size: 20px; 
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -1751,7 +1752,7 @@ input {
 .single_about_item p {
   color: #6270A0;
   text-align: center;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -1794,7 +1795,7 @@ input {
 
 .about_today_left h3 {
   color: #FFF;
-  font-size: 40px; 
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 127.5%;
@@ -1804,7 +1805,7 @@ input {
 
 .about_today_left p {
   color: #FFF;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   margin-top: 15px;
@@ -1815,11 +1816,11 @@ input {
   border-radius: 10px;
   background: #FFF;
   -webkit-box-shadow: 0px 12px 45px 0px rgba(56, 12, 130, 0.31);
-          box-shadow: 0px 12px 45px 0px rgba(56, 12, 130, 0.31); 
+          box-shadow: 0px 12px 45px 0px rgba(56, 12, 130, 0.31);
   padding: 18px 28px;
   color: #450AA7;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -1861,7 +1862,7 @@ input {
 
 .summer_banner h3 {
   color: #FFF;
-  font-size: 40px; 
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 146.5%;
@@ -1872,7 +1873,7 @@ input {
 
 .summer_chart_title h3 {
   color: #000929;
-  font-size: 24px; 
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -1890,8 +1891,8 @@ input {
 }
 
 .summer_right_card{ 
-  -webkit-box-flex: 0; 
-      -ms-flex: 0 0 39%; 
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 39%;
           flex: 0 0 39%;
 }
 .summer_chart {
@@ -1901,7 +1902,7 @@ input {
   border-radius: 9px;
   background: #FFF;
   -webkit-box-shadow: 9px 20px 43px 0px rgba(69, 10, 167, 0.04);
-          box-shadow: 9px 20px 43px 0px rgba(69, 10, 167, 0.04); 
+          box-shadow: 9px 20px 43px 0px rgba(69, 10, 167, 0.04);
 }
 
 .summer_right_card {
@@ -1914,7 +1915,7 @@ input {
 
 .summer_right_card h4 {
   color: #000929;
-  font-size: 18px; 
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1942,7 +1943,7 @@ input {
 
 .summer_card_card_left p {
   color: #6270A0;
-  font-size: 12px; 
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -1950,7 +1951,7 @@ input {
 
 .summer_card_card_left h3 {
   color: #000929;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1990,7 +1991,7 @@ input {
 }
 
 .selling_item li:last-child{ 
-  border-bottom: 1px solid transparent; 
+  border-bottom: 1px solid transparent;
 }
 
 .selling_p {
@@ -2005,7 +2006,7 @@ input {
 
 .selling_p span {
   border-radius: 5px;
-  background: #F0EFFB; 
+  background: #F0EFFB;
   width: 46px;
   height: 43px;
   display: -webkit-box;
@@ -2027,7 +2028,7 @@ input {
 
 .selling_p p {
   color: #000929;
-  font-size: 15px; 
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2036,7 +2037,7 @@ input {
 .selling_item li b {
   color: #000929;
   text-align: right;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%;
@@ -2059,14 +2060,14 @@ input {
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
   color: #450AA7;
-  font-size: 15px; 
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
 }
 
 .top_ten li:last-child{ 
-  border-bottom: 1px solid transparent; 
+  border-bottom: 1px solid transparent;
 }
 
 .summer_chart_main {
@@ -2093,7 +2094,7 @@ input {
 
 .emn_banner_left h3 {
   color: #FFF;
-  font-size: 40px; 
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 146.5%;
@@ -2103,7 +2104,7 @@ input {
 
 .emn_banner_left p {
   color: #FFF;
-  font-size: 15px; 
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2116,7 +2117,7 @@ input {
   background: #450AA7;
   padding: 7px 14px;
   color: #FFF;
-  font-size: 12px; 
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2131,7 +2132,7 @@ input {
   width: 152px;
   color: #000929;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -2146,15 +2147,15 @@ input {
   /*width: 152px;*/
   color: #fff;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; 
+  line-height: 150%;
 }
 .emn_banner_right {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   gap: 15px;
 }
 
@@ -2243,7 +2244,7 @@ input {
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
-  /* width: 100%; */ 
+  /* width: 100%; */
   padding-bottom: 15px;
 }
 
@@ -2254,7 +2255,7 @@ input {
 .maps_table tbody tr td {
   color: #000929;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -2280,7 +2281,7 @@ input {
 
 .left_nearby h3 {
   color: #000929;
-  font-size: 28px; 
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -2289,9 +2290,9 @@ input {
 
 .left_nearby p {
   color: #6270A0;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400; 
+  font-weight: 400;
   width: 437px;
 }
 
@@ -2307,13 +2308,13 @@ input {
 }
 
 .right_nearby .rent_btn { 
-  background: #fff; 
-  color: #000929; 
+  background: #fff;
+  color: #000929;
 }
 
 .right_nearby .buy_btn { 
-  background: #450AA7; 
-  color: #fff; 
+  background: #450AA7;
+  color: #fff;
 }
 
 
@@ -2336,7 +2337,7 @@ input {
 .contact_title h2 {
   color: #000929;
   text-align: center;
-  font-size: 60px; 
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 119%;
@@ -2347,7 +2348,7 @@ input {
 .contact_title p {
   color: #6270A0;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2426,12 +2427,12 @@ input {
 }
 
 .contact_list li:last-child{
-  border-bottom: 1px solid transparent; 
+  border-bottom: 1px solid transparent;
 }
 
 .contact_info b {
   color: #000929;
-  font-size: 18px; 
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -2440,7 +2441,7 @@ input {
 .contact_info p {
   color: #6270A0;
   text-align: center;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2510,7 +2511,7 @@ input {
 .blog_date b {
   color: #450AA7;
   text-align: center;
-  font-size: 24px; 
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -2518,7 +2519,7 @@ input {
 
 .blog_date p {
   color: #450AA7;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2526,7 +2527,7 @@ input {
 
 .blog_content p {
   color: #000929;
-  font-size: 20px; 
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -2536,7 +2537,7 @@ input {
 .blog_content a {
   color: #450AA7;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -2548,7 +2549,7 @@ input {
 
 .blog_date {
   position: absolute;
-  background: #fff; 
+  background: #fff;
   width: 73px;
   height: 65px;
   display: -webkit-box;
@@ -2572,7 +2573,7 @@ input {
 .blog_pagination ul li a {
   color: #000929;
   text-align: center;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
@@ -2684,7 +2685,7 @@ input {
 .share_left ul li p {
   color: #000929;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 168.4%;
@@ -2692,7 +2693,7 @@ input {
 
 .broad_camp a {
   color: #6270A0;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -2700,12 +2701,12 @@ input {
 
 .broad_camp  i {
   color: #6270A0;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .broad_camp p {
   color: #000929;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -2713,7 +2714,7 @@ input {
 
 .single_blog_title h2 {
   color: #000929;
-  font-size: 40px; 
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 127.5%;
@@ -2761,7 +2762,7 @@ input {
 
 .single_blog_content > p {
   color: #6270A0;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
@@ -2869,7 +2870,7 @@ input {
 .share_this ul li p {
   color: #000929;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 168.4%;
@@ -2877,7 +2878,7 @@ input {
 
 .single_blog_user ul li p {
   color: #000929;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 123.187%;
@@ -2908,11 +2909,11 @@ input {
   font-weight: 700;
   line-height: 150%;
   width: 100%;
-  padding: 25px 0px;
+  padding: 25px 10px;
   cursor: pointer;
 }
 .mobile_menu ul li:hover {
-    background: #450aa733;
+    background: #eee;
 }
 
 .mobile_menu {
@@ -2934,9 +2935,9 @@ input {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; 
-  -webkit-box-pack: justify; 
-      -ms-flex-pack: justify; 
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2948,7 +2949,7 @@ input {
 
 .mobile_menu ul li p {
   color: #6270A0;
-  font-size: 14px; 
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -3001,7 +3002,7 @@ input {
 
 .mobile_overlay {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   position: absolute;
   /* background: #ddd; */
   top: 0;
@@ -3036,7 +3037,7 @@ input {
 .lock_icon a {
   border-radius: 10px;
   border: 1.5px solid #E0DEF7;
-  background: #FFF; 
+  background: #FFF;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -3144,10 +3145,10 @@ input {
 } */
 
 /*.banner-image.searc2_banner_img {*/
-/*  position: absolute;*/
-/*  right: 0;*/
-/*  top: 0;*/
-/*  z-index: 99;*/
+/*	position: absolute;*/
+/*	right: 0;*/
+/*	top: 0;*/
+/*	z-index: 99;*/
 /*}*/
 /************************* Cashflow Css Start *********************/
 .Cashflow-banner-heading{
@@ -3304,6 +3305,9 @@ input {
 .cash_flow_left .text_12{
   margin-left: 6px;
 }
+.right_item {
+    text-align: right;
+}
 .cash_flow_left .text_14{
   padding-bottom: 13px;
 }
@@ -3352,7 +3356,7 @@ input {
 }
 
 /*.Banner_main_area.banner_main_section .banner-area {*/
-/*  background: transparent;*/
+/*	background: transparent;*/
 /*}*/
 
 .filter_content {
@@ -3518,7 +3522,7 @@ input {
     cursor: pointer;
 }
 
-}
+
 .select_menu .options{
   position: absolute;
   padding: 5px;
@@ -3900,7 +3904,8 @@ General
 
 /* Add Dropdown Menu */
 .mobile_menu .dropdown{
-  border-bottom: 1px solid #6270A0;
+  /*border-bottom: 1px solid #6270A0;*/
+    padding-left: 10px;
 }
 .mobile_menu .dropdown-menu{
   flex-direction: column !important;
@@ -4038,6 +4043,30 @@ General
     color: #FF0000;
 }
 
+.transaction_analysis_link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2.5em;
+}
+
+tr:hover td {
+    background: #eee;
+}
+
+.sub_detail_item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #6270a049;
+    padding-top: 13px;
+    padding-bottom: 3px;
+}
+
+.hidden-block {
+    display: none;
+}
 
 /* search css  */
 .mobile_search_area{
