@@ -6,8 +6,10 @@
 <title>Auto Focus Input Field</title>
 <script>
 window.onload = function() {
-  var inputField = document.getElementById('myInput');
-  inputField.focus();
+  setTimeout(function() {
+    var inputField = document.getElementById('myInput');
+    inputField.focus();
+  }, 0); // Set timeout to 0 milliseconds to execute immediately
 };
 </script>
 </head>
