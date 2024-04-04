@@ -5,12 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Auto Focus Input Field</title>
 <script>
-window.onload = function() {
-  setTimeout(function() {
-    var inputField = document.getElementById('myInput');
-    inputField.focus();
-  }, 0); // Set timeout to 0 milliseconds to execute immediately
-};
+document.addEventListener("DOMContentLoaded", function() {
+  var inputField = document.getElementById('myInput');
+  inputField.focus();
+});
 </script>
 </head>
 <body>
