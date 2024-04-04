@@ -26,6 +26,10 @@ $(document).ready(function(){
         sessionStorage['DISTRICT_PAGE_TYPE'] = district_page_type
     })
 
+    $("#new_search").on("click", function (){
+         $('#condo_search').focus()
+    })
+
     $("#pills-profile-tab").on("click", function (){
         district_page_type = NEW
         sessionStorage['DISTRICT_PAGE_TYPE'] = district_page_type
@@ -66,7 +70,7 @@ $(document).ready(function(){
          ticks_snap_bounds: 200,
          tooltip: 'always',
         formatter: function(value) {
-           return value +'Years ';
+           return value +' Years ';
         },
         ticks_tooltip: true,
         step: 1
@@ -103,11 +107,38 @@ $(document).ready(function(){
         step: 1
      });
 
-
+      $("input[data-type='currency']").on({
+        keyup: function() {
+          formatCurrency($(this));
+        }
+      });
+        function formatNumber(n) {
+          // format number 1000000 to 1,234,567
+          return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
+        function formatCurrency(input) {
+          var input_val = input.val();
+          sessionStorage[input.attr("id")] = input_val
+          // don't validate empty input
+          if (input_val === "") { return; }
+          // remove all non-digits
+          input_val = formatNumber(input_val);
+          input_val = "$" + input_val;
+          // send updated string to input
+          input.val(input_val);
+        }
 
     
 });
-
+/**
+   * Preloader
+   */
+let preloader = $('#preloader');
+if (preloader) {
+window.addEventListener('load', () => {
+  preloader.remove()
+});
+}
 // Nice Select
 $(document).ready(function () {
     $('select').niceSelect();
@@ -129,25 +160,6 @@ function backtotop() {
 }
 backtotop();
 
-  // End Fixed Scroll Area jQuery
-
-// Distance Custom Click
-
-// const optionMenu = document.querySelector('.select_menu'),
-//       selectBtn = optionMenu.querySelector('.select_btn');
-
-// selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-
-
-// window.onclick = function(event){
-//    if(!event.targer.matches(".select_btn")){
-//       var dd = document.getElementsByClassName("options");
-//    }
-//    for(var i = 0; i<dd.length; i++){
-//       var x =dd(i);
-//       if(x.classList.contains('active'))(x.classList.remove('active'))
-//    }
-// }
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -208,3 +220,142 @@ window.addEventListener('load', function() {
         }
     });
 });
+
+
+
+$(document).ready(function() {
+  function checkMediaQuery() {
+      if (window.matchMedia("(max-width: 575px)").matches) {
+          $('#search_show').on('click', function() {
+              $('.mobile_search_area').addClass('over_search_box');
+              $('.mobile_apps').css('display', 'none');
+              // $('.mobile_search_input').focus();
+          });
+
+          $('#mobile-search-go_back-arrow').on('click', function() {
+              $('.mobile_search_area').removeClass('over_search_box');
+              $('.mobile_apps').css('display', 'block');
+          });
+      } else {
+          // Media query is false (above 575px)
+          $('#search_show').off('click'); // Remove click event handler
+          $('.mobile_apps').css('display', 'block');
+      }
+  }
+
+  // Initial check when the page loads
+  checkMediaQuery();
+
+  // Check media query on window resize
+  $(window).resize(function() {
+      checkMediaQuery();
+  });
+});
+
+
+
+
+
+
+
+
+document.getElementById('search_show').addEventListener('click', function() {
+  focusAndOpenKeyboard('myInput');
+});
+
+function focusAndOpenKeyboard(elementId) {
+  const el = document.getElementById(elementId);
+
+  if (el) {
+      // Create a temporary input element to focus on and open the keyboard
+      let __tempEl__;
+      let observer;
+
+      function focusOnDummyElementToOpenIOSKeyboard() {
+          __tempEl__ = document.createElement('input');
+          __tempEl__.style.position = 'absolute';
+          __tempEl__.style.top = (el.offsetTop + 7) + 'px';
+          __tempEl__.style.left = el.offsetLeft + 'px';
+          __tempEl__.style.height = 0;
+          __tempEl__.style.opacity = 0; // Set opacity to 0 to make it invisible
+          document.body.appendChild(__tempEl__);
+          __tempEl__.focus();
+
+           // The keyboard is open. Now do a delayed focus on the target element
+            setTimeout(function() {
+              el.focus();
+              el.click();
+              // Remove the temp element
+              document.body.removeChild(__tempEl__);
+            }, 100);
+      }
+
+      // Function to focus on the target element and remove the observer
+      function focusOnElementAndCleanup() {
+          el.focus();
+          if (__tempEl__ && document.body.contains(__tempEl__)) {
+              document.body.removeChild(__tempEl__);
+          }
+          if (observer) {
+              observer.disconnect();
+          }
+      }
+
+      // Check if the target element is already visible
+      if (isVisible(el)) {
+          focusOnElementAndCleanup();
+      } else {
+          focusOnDummyElementToOpenIOSKeyboard();
+
+          // Create a MutationObserver to watch for changes in the DOM
+          observer = new MutationObserver(function (mutationsList) {
+              for (const mutation of mutationsList) {
+                  if (mutation.type === 'childList' && isVisible(el)) {
+                      focusOnElementAndCleanup();
+                      break;
+                  }
+              }
+          });
+
+          // Start observing changes in the parent node (you can change this to a more appropriate parent)
+          observer.observe(document.body, { childList: true, subtree: true });
+      }
+
+
+  }
+
+  // Function to check if the element is visible in the DOM
+  function isVisible(element) {
+      var rect = element.getBoundingClientRect();
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  }
+}
+
+
+$(document).ready(function(){
+    $('.search_type_btn button').click(function(){
+      $('.search_type_btn button').removeClass("active");
+      $(this).addClass("active");
+  });
+
+  $('.mobile_condo_btn button').click(function(){
+    $('.mobile_condo_btn button').removeClass("active");
+    $(this).addClass("active");
+});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
